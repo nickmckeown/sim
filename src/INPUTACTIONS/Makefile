@@ -1,0 +1,78 @@
+ACC=
+CC=$(ACC) gcc
+REMCFLAGS     = -Wall -Wshadow -I.. -DLIST_STATS -DLIST_HISTOGRAM $(SIMGRAPH)
+
+DEST	      = .
+
+HDRS	      = inputAction.h \
+		inputActionTable.h \
+		utils.h
+
+INSTALL	      = /etc/install
+
+LD	      = ld
+
+LDFLAGS	      = 
+
+LIBS	      =
+
+MAKEFILE      = Makefile
+
+OBJS	      = ${SRCS:.c=.o} 
+
+PRINT	      = pr
+
+PROGRAM       = inputActions.o
+
+SHELL	      = /bin/sh
+
+SRCS	      = defaultInputAction.c \
+							utils.c
+
+SYSHDRS	      =
+
+all:	
+		$(MAKE) optall
+
+optall: 
+		$(MAKE) $(PROGRAM) CFLAGS="-O3 $(REMCFLAGS)"
+
+debugall:
+		$(MAKE) $(PROGRAM) CFLAGS="-g $(REMCFLAGS)"
+
+$(PROGRAM)::     $(OBJS) $(LIBS)
+		@echo "Linking clean sim: $(PROGRAM) ..."
+		$(LD) -r $(OBJS) $(LDFLAGS) $(LIBS) -o $(PROGRAM)
+		@echo "done"
+
+clean:;		rm -f $(OBJS) $(PROGRAM) core
+
+clobber:;	rm -f $(OBJS) $(PROGRAM) core tags
+
+##depend:;	@mkmf -f $(MAKEFILE) ROOT=$(ROOT)
+
+depend:;	makedepend -o.o -- $(REMCFLAGS) -- $(SRCS)
+
+
+echo:;		@echo $(HDRS) $(SRCS)
+
+index:;		ctags -wx $(HDRS) $(SRCS)
+
+install::	$(PROGRAM)
+		@echo Installing $(PROGRAM) in $(DEST)
+#		@-strip $(PROGRAM)
+		if [ $(DEST) != . ]; then \
+		(rm -f $(DEST)/$(PROGRAM); $(INSTALL) -f $(DEST) $(PROGRAM)); fi
+
+print:;		$(PRINT) $(HDRS) $(SRCS)
+
+tags:           $(HDRS) $(SRCS); @ctags $(HDRS) $(SRCS)
+
+update:		$(DEST)/$(PROGRAM)
+
+###
+# DO NOT DELETE THIS LINE -- make depend depends on it.
+
+defaultInputAction.o: ../sim.h ../bitmap.h ../stat.h ../histogram.h
+defaultInputAction.o: ../lists.h ../switchStats.h ../types.h
+defaultInputAction.o: ../latencyStats.h ../functionTable.h inputAction.h

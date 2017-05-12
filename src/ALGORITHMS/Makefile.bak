@@ -1,0 +1,114 @@
+ACC=
+CC=$(ACC) gcc
+REMCFLAGS	      =  -Wall -Wshadow -I.. -DLIST_HISTOGRAM -DLIST_STATS $(SIMGRAPH)
+
+DEST	      = .
+
+HDRS	      = algorithm.h\
+		algorithmTable.h\
+		assign2.h\
+		miscfns.h\
+		pim.h\
+		rr.h\
+		scheduleStats.h\
+
+INSTALL	      = /etc/install
+
+LD	      = ld
+
+LDFLAGS	      =
+
+LIBS	      =
+
+OBJS	      = ${SRCS:.c=.o}
+
+PRINT	      = pr
+
+PROGRAM       = algorithms.o
+
+SHELL	      = /bin/sh
+
+SRCS          = ap2driver.c \
+        assign2sap.c \
+        fifo.c \
+        future.c \
+        gs_lqf.c \
+        gs_ocf.c \
+        gsaMatch.c \
+        ilpf.c \
+        ilqf.c \
+        iocf.c \
+        iopf.c \
+        lpf.c \
+        lpf_delay.c \
+        lqf.c \
+        maximum.c \
+        maxrand.c \
+        maxsize.c \
+        mucf.c \
+        mcast_conc_residue.c \
+        mcast_dist_residue.c \
+        mcast_random.c \
+        mcast_slip.c \
+        mcast_tatra.c \
+        mcast_wt_fanout.c \
+        mcast_wt_residue.c \
+        miscfns.c\
+        neural.c \
+        nullSchedulingAlgorithm.c \
+        ocf.c \
+        opf.c \
+        opf_delay.c \
+        pim.c \
+        pri_fifo.c \
+        pri_lqf.c \
+        pri_mcast_random.c \
+        pri_ocf.c \
+        pri_islip.c\
+        pri_combo.c\
+        pristrict_lqf.c \
+        pristrict_ocf.c \
+        rr.c \
+        scheduleStats.c \
+        islip.c \
+        wfa.c \
+        wwfa.c
+
+SYSHDRS	      =
+all:	
+		$(MAKE) optall
+
+optall: 
+		$(MAKE) $(PROGRAM) CFLAGS="-O3 $(REMCFLAGS)"
+
+debugall:
+		$(MAKE) $(PROGRAM) CFLAGS="-g $(REMCFLAGS)"
+
+$(PROGRAM)::     $(OBJS) $(LIBS)
+		@echo "Linking clean sim: $(PROGRAM) ..."
+		$(LD) -r $(OBJS) $(LDFLAGS) $(LIBS) -o $(PROGRAM)
+		@echo "done"
+
+clean:;		rm -f $(OBJS) $(PROGRAM) core
+
+clobber:;	rm -f $(OBJS) $(PROGRAM) core tags
+
+depend:;	makedepend -o.o -- $(REMCFLAGS) -- $(SRCS)
+
+echo:;		@echo $(HDRS) $(SRCS)
+
+index:;		ctags -wx $(HDRS) $(SRCS)
+
+install::	$(PROGRAM)
+		@echo Installing $(PROGRAM) in $(DEST)
+#		@-strip $(PROGRAM)
+		@if [ $(DEST) != . ]; then \
+		(rm -f $(DEST)/$(PROGRAM); $(INSTALL) -f $(DEST) $(PROGRAM)); fi
+
+print:;		@$(PRINT) $(HDRS) $(SRCS)
+
+tags:           $(HDRS) $(SRCS); @ctags $(HDRS) $(SRCS)
+
+update:		$(DEST)/$(PROGRAM)
+
+# DO NOT DELETE THIS LINE -- make depend depends on it.
