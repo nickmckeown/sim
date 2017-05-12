@@ -1,0 +1,24 @@
+
+1) DIRECTORY STRUCTURE:
+======================
+
+The directories all contain test input files pertaining to the 
+	 specific traffic patterns,algorithms etc.
+
+2) Naming Conventions:
+=====================
+
+Include extension 'p' when priority is there, else no extension
+Include extension 'u' when only unicast traffic else
+Include extension 'm' when multicast traffic is there.
+
+
+Examples:
+
+.pm - We have both multicast traffic as well as priorities built
+	  into them
+
+.u  - Only unicast traffic. No priority is there among cells.
+
+-- Sundar.
+

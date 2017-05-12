@@ -1,0 +1,52 @@
+# ../sim -l1000
+Numswitches 1
+Switch 0
+	Numinputs    32
+	Numoutputs   32
+	PriorityLevels	4
+	InputAction  defaultInputAction  
+	OutputAction strictPriorityOutputAction
+	Fabric       crossbar
+	Algorithm	pri_fifo
+	0	bernoulli_iid_uniform  -p 4 -u 1.0 -r 0.25:0.25:0.25:0.25
+	1	bernoulli_iid_uniform  -p 4 -u 1.0 -r 0.25:0.25:0.25:0.25
+	2	bernoulli_iid_uniform  -p 4 -u 1.0 -r 0.25:0.25:0.25:0.25
+	3	bernoulli_iid_uniform  -p 4 -u 1.0 -r 0.25:0.25:0.25:0.25
+	4	bernoulli_iid_uniform  -p 4 -u 1.0 -r 0.25:0.25:0.25:0.25
+	5	bernoulli_iid_uniform  -p 4 -u 1.0 -r 0.25:0.25:0.25:0.25
+	6	bernoulli_iid_uniform  -p 4 -u 1.0 -r 0.25:0.25:0.25:0.25
+	7	bernoulli_iid_uniform  -p 4 -u 1.0 -r 0.25:0.25:0.25:0.25
+	8	bernoulli_iid_uniform  -p 4 -u 1.0 -r 0.25:0.25:0.25:0.25
+	9	bernoulli_iid_uniform  -p 4 -u 1.0 -r 0.25:0.25:0.25:0.25
+	10	bernoulli_iid_uniform  -p 4 -u 1.0 -r 0.25:0.25:0.25:0.25
+	11	bernoulli_iid_uniform  -p 4 -u 1.0 -r 0.25:0.25:0.25:0.25
+	12	bernoulli_iid_uniform  -p 4 -u 1.0 -r 0.25:0.25:0.25:0.25
+	13	bernoulli_iid_uniform  -p 4 -u 1.0 -r 0.25:0.25:0.25:0.25
+	14	bernoulli_iid_uniform  -p 4 -u 1.0 -r 0.25:0.25:0.25:0.25
+	15	bernoulli_iid_uniform  -p 4 -u 1.0 -r 0.25:0.25:0.25:0.25
+	16	bernoulli_iid_uniform  -p 4 -u 1.0 -r 0.25:0.25:0.25:0.25
+	17	bernoulli_iid_uniform  -p 4 -u 1.0 -r 0.25:0.25:0.25:0.25
+	18	bernoulli_iid_uniform  -p 4 -u 1.0 -r 0.25:0.25:0.25:0.25
+	19	bernoulli_iid_uniform  -p 4 -u 1.0 -r 0.25:0.25:0.25:0.25
+	20	bernoulli_iid_uniform  -p 4 -u 1.0 -r 0.25:0.25:0.25:0.25
+	21	bernoulli_iid_uniform  -p 4 -u 1.0 -r 0.25:0.25:0.25:0.25
+	22	bernoulli_iid_uniform  -p 4 -u 1.0 -r 0.25:0.25:0.25:0.25
+	23	bernoulli_iid_uniform  -p 4 -u 1.0 -r 0.25:0.25:0.25:0.25
+	24	bernoulli_iid_uniform  -p 4 -u 1.0 -r 0.25:0.25:0.25:0.25
+	25	bernoulli_iid_uniform  -p 4 -u 1.0 -r 0.25:0.25:0.25:0.25
+	26	bernoulli_iid_uniform  -p 4 -u 1.0 -r 0.25:0.25:0.25:0.25
+	27	bernoulli_iid_uniform  -p 4 -u 1.0 -r 0.25:0.25:0.25:0.25
+	28	bernoulli_iid_uniform  -p 4 -u 1.0 -r 0.25:0.25:0.25:0.25
+	29	bernoulli_iid_uniform  -p 4 -u 1.0 -r 0.25:0.25:0.25:0.25
+	30	bernoulli_iid_uniform  -p 4 -u 1.0 -r 0.25:0.25:0.25:0.25
+	31	bernoulli_iid_uniform  -p 4 -u 1.0 -r 0.25:0.25:0.25:0.25
+   Stats
+		Arrivals    (0,0)
+		Departures
+		Latency     (*,1)
+		Occupancy   (1,*)
+   Histograms
+		Arrivals
+		Departures  (*,m)
+		Latency
+		Occupancy

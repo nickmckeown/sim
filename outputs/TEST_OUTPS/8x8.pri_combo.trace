@@ -1,0 +1,277 @@
+##################################################
+../../bin/sim -l1000 -f 8x8.pri_combo.trace 
+This is Sim version 2.36, Released May 11, 2017 
+
+# Date Thu May 11 17:39:14 2017
+# Machine DN525eqo.SUNet
+##################################################
+
+Number of switches: 1
+
+============================================
+================ Switch 0 =================
+============================================
+Creating switch with 8 inputs, 8 outputs and 4 priorities
+InputAction: defaultInputAction
+    Max cells per input buffer: INFINITE
+    Max cells per input FIFO: INFINITE
+OutputAction: strictPriorityOutputAction
+Fabric: crossbar
+Switch Scheduling Algorithm: pri_combo
+Infinite output buffers.
+Input: 0  Traffic model: trace
+        Reading from: traceInput 
+Input: 1  Traffic model: trace
+        Reading from: traceInput 
+Input: 2  Traffic model: trace
+        Reading from: traceInput 
+Input: 3  Traffic model: trace
+        Reading from: traceInput 
+Input: 4  Traffic model: trace
+        Reading from: traceInput 
+Input: 5  Traffic model: trace
+        Reading from: traceInput 
+Input: 6  Traffic model: trace
+        Reading from: traceInput 
+Input: 7  Traffic model: trace
+        Reading from: traceInput 
+
+Statistics Enabled for switch: 0
+---------------------------------
+    Arrival Statistics: 
+      Enabled for i/p buffer (0,0)
+    Departures Statistics: 
+    Latency Statistics: 
+      Enabled for i/p buffers (*,1)
+      Enabled for i/p buffers (*,1)
+      Enabled for i/p buffers (*,1)
+      Enabled for i/p buffers (*,1)
+      Enabled for i/p buffers (*,1)
+      Enabled for i/p buffers (*,1)
+      Enabled for i/p buffers (*,1)
+      Enabled for i/p buffers (*,1)
+    Occupancy Statistics: 
+      Enabled for i/p buffers (1,*)
+    Arrival Histogram: 
+    Departures Histogram: 
+    Latency Histogram: 
+    Occupancy Histogram: 
+ResetStatsTime 500
+Resetting stats for switch: 0 at time 0
+Stopped because converged at time: 294
+
+
+
+===============================================================
+======================== RESULTS ==============================
+===============================================================
+Simulation stopped at time: 295
+Maximum memory used: 491520 bytes
+# Simulation runtime: 0 secs
+
+====================================================
+====================== SWITCH    0 =================
+====================================================
+  Traffic Information
+  -------------------
+  I/P  model  Util
+  0  trace  0.023729
+  1  trace  0.023729
+  2  trace  0.023729
+  3  trace  0.023729
+  4  trace  0.023729
+  5  trace  0.023729
+  6  trace  0.023729
+  7  trace  0.023729
+
+
+  INPUT BUFFER ARRIVAL STATS
+  --------------------------
+  I/P O/P   Pri  Avg   SD
+  -----------------------
+    0   0   0   0.00000 0.00000 (0)
+    0   0   1   0.00000 0.00000 (0)
+    0   0   2   0.00000 0.00000 (0)
+    0   0   3   0.00000 0.00000 (0)
+
+  INPUT BUFFER DEPARTURE STATS
+  ----------------------------
+  I/P O/P   Pri  Avg   SD
+  -----------------------
+    No Stats Enabled. 
+
+  INPUT BUFFER LATENCY STATS
+  --------------------------
+  I/P O/P   Pri  Avg   SD
+  -----------------------
+    0   1   0   1.00000 0.00000 (1)
+    0   1   1   0.00000 0.00000 (0)
+    0   1   2   0.00000 0.00000 (0)
+    0   1   3   0.00000 0.00000 (0)
+    1   1   0   4.00000 0.00000 (1)
+    1   1   1   0.00000 0.00000 (0)
+    1   1   2   0.00000 0.00000 (0)
+    1   1   3   0.00000 0.00000 (0)
+    2   1   0   0.00000 0.00000 (1)
+    2   1   1   0.00000 0.00000 (0)
+    2   1   2   0.00000 0.00000 (0)
+    2   1   3   0.00000 0.00000 (0)
+    3   1   0   2.00000 0.00000 (1)
+    3   1   1   0.00000 0.00000 (0)
+    3   1   2   0.00000 0.00000 (0)
+    3   1   3   0.00000 0.00000 (0)
+    4   1   0   7.00000 0.00000 (1)
+    4   1   1   0.00000 0.00000 (0)
+    4   1   2   0.00000 0.00000 (0)
+    4   1   3   0.00000 0.00000 (0)
+    5   1   0   6.00000 0.00000 (1)
+    5   1   1   0.00000 0.00000 (0)
+    5   1   2   0.00000 0.00000 (0)
+    5   1   3   0.00000 0.00000 (0)
+    6   1   0   5.00000 0.00000 (1)
+    6   1   1   0.00000 0.00000 (0)
+    6   1   2   0.00000 0.00000 (0)
+    6   1   3   0.00000 0.00000 (0)
+    7   1   0   3.00000 0.00000 (1)
+    7   1   1   0.00000 0.00000 (0)
+    7   1   2   0.00000 0.00000 (0)
+    7   1   3   0.00000 0.00000 (0)
+
+  INPUT BUFFER TIME AVG OCCUPANCY STATS
+  -------------------------------------
+  I/P O/P   Pri  Avg   SD
+  -----------------------
+    1   0   0   0.00000 0.00000 (294)
+    1   0   1   0.00000 0.00000 (294)
+    1   0   2   0.00000 0.00000 (294)
+    1   0   3   0.00000 0.00000 (294)
+    1   1   0   0.01361 0.11585 (294)
+    1   1   1   0.00000 0.00000 (294)
+    1   1   2   0.00000 0.00000 (294)
+    1   1   3   0.00000 0.00000 (294)
+    1   2   0   0.00000 0.00000 (294)
+    1   2   1   0.00340 0.05822 (294)
+    1   2   2   0.00000 0.00000 (294)
+    1   2   3   0.00000 0.00000 (294)
+    1   3   0   0.00000 0.00000 (294)
+    1   3   1   0.00000 0.00000 (294)
+    1   3   2   0.01701 0.12930 (294)
+    1   3   3   0.00000 0.00000 (294)
+    1   4   0   0.00000 0.00000 (294)
+    1   4   1   0.00000 0.00000 (294)
+    1   4   2   0.00000 0.00000 (294)
+    1   4   3   0.00000 0.00000 (294)
+    1   5   0   0.00000 0.00000 (294)
+    1   5   1   0.00000 0.00000 (294)
+    1   5   2   0.00000 0.00000 (294)
+    1   5   3   0.00000 0.00000 (294)
+    1   6   0   0.00000 0.00000 (294)
+    1   6   1   0.00000 0.00000 (294)
+    1   6   2   0.00000 0.00000 (294)
+    1   6   3   0.00000 0.00000 (294)
+    1   7   0   0.00000 0.00000 (294)
+    1   7   1   0.00000 0.00000 (294)
+    1   7   2   0.00000 0.00000 (294)
+    1   7   3   0.00000 0.00000 (294)
+    1   X 0.034 0.230 (295)
+
+
+  INPUT BUFFER ARRIVAL HISTOGRAMS
+  --------------------------
+    No Histograms Enabled. 
+
+  INPUT BUFFER DEPARTURE HISTOGRAMS
+  ----------------------------
+    No Histograms Enabled. 
+
+  INPUT BUFFER LATENCY HISTOGRAMS
+  --------------------------
+    No Histograms Enabled. 
+
+  INPUT BUFFER TIME AVG OCCUPANCY HISTOGRAMS
+  -------------------------------------
+    No Histograms Enabled. 
+
+  OUTPUT BUFFER ARRIVAL STATS
+  ---------------------------
+  O/P   Avg   SD
+  --------------
+    No Stats Enabled. 
+
+  OUTPUT BUFFER DEPARTURE STATS
+  -----------------------------
+  O/P   Avg   SD
+  --------------
+    No Stats Enabled. 
+
+  OUTPUT BUFFER LATENCY STATS
+  ---------------------------
+  O/P   Avg   SD
+  --------------
+    No Stats Enabled. 
+
+  OUTPUT BUFFER TIME AVG OCCUPANCY STATS
+  --------------------------------------
+  O/P   Avg   SD
+  --------------
+    No Stats Enabled. 
+
+  Latency statistics
+  ------------------
+                       Avg       SD     Number
+                     -------------------------
+     Input Latency:  5.2368421 3.4749798    (152)
+    Fabric Latency:         0        0    (152)
+    Output Latency:         0        0    (152)
+    Switch Latency:  5.2368421 3.4749798    (152)
+
+UNICAST:
+    Input latency per priority:---->
+     0                          3.5 2.2912878    (8)
+     1                          3.5 2.2912878    (8)
+     2                          3.5 2.2912878    (8)
+     3                          3.5 2.2912878    (8)
+MULTICAST:
+    Input latency per priority:---->
+     0                            0        0    (0)
+     1                          7.1 3.7802116    (40)
+     2                          6.5 3.4132096    (40)
+     3                          3.5 2.2912878    (40)
+               Avg:  5.2368421 3.4749798    (152)
+
+UNICAST:
+    Output latency per priority:---->
+     0                            0        0    (8)
+     1                            0        0    (8)
+     2                            0        0    (8)
+     3                            0        0    (8)
+MULTICAST:
+    Output latency per priority:---->
+     0                            0        0    (0)
+     1                            0        0    (40)
+     2                            0        0    (40)
+     3                            0        0    (40)
+               Avg:         0        0    (152)
+
+
+  Crossbar statistics
+  -------------------
+                       Avg       SD     Number
+                     -------------------------
+Match Size:          0.51525424 1.4794426    (295)
+
+  OUTPUT BURSTINESS
+  -----------------
+   O/P  Avg   SD   
+  -----------------
+    0    1.000   0.000
+    1    1.000   0.000
+    2    1.000   0.000
+    3    1.000   0.000
+    4    1.000   0.000
+    5    1.000   0.000
+    6    1.000   0.000
+    7    1.000   0.000
+-----------------------------
+Total Latency over all cells:  5.2368421 3.4749798    (152)
+-----------------------------

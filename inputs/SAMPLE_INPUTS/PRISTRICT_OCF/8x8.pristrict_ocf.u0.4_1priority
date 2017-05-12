@@ -1,0 +1,27 @@
+# ../sim -l1000
+Numswitches 1
+Switch 0
+	Numinputs    8
+	Numoutputs   8
+	InputAction  defaultInputAction  
+	OutputAction defaultOutputAction
+	Fabric       crossbar
+	Algorithm	 pristrict_ocf
+	0	bernoulli_iid_uniform  -u 0.4
+	1	bernoulli_iid_uniform  -u 0.4
+	2	bernoulli_iid_uniform  -u 0.4
+	3	bernoulli_iid_uniform  -u 0.4
+	4	bernoulli_iid_uniform  -u 0.4
+	5	bernoulli_iid_uniform  -u 0.4
+	6	bernoulli_iid_uniform  -u 0.4
+	7	bernoulli_iid_uniform  -u 0.4
+	Stats
+		Arrivals    (0,0)
+		Departures
+		Latency     (*,1)
+		Occupancy   (1,*)
+	Histograms
+		Arrivals 
+		Departures  (*,m)
+		Latency 
+		Occupancy   

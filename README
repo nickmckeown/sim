@@ -1,0 +1,48 @@
+This release of sim contains the following files:
+
+DIRECTORIES
+-----------
+
+ALGORITHMS
+DOCS
+FABRICS
+INPUTACTIONS
+Makefile
+OUTPUTACTIONS
+SAMPLE_INPUTS
+TEST_INPS
+TEST_OUTPS
+TRAFFIC
+
+Files.
+------
+
+Program_Usage_All_Options.txt
+README
+bitmap.c
+bitmap.h
+cell.c
+checkInstall
+circBuffer.c
+circBuffer.h
+create.c
+debug.c
+histogram.c
+histogram.h
+latencyStats.c
+latencyStats.h
+lists.c
+lists.h
+sim.c
+sim.h
+stat.c
+stat.h
+switchStats.c
+switchStats.h
+types.h
+
+Please refer to the DOCS directory for documentation
+
+Please refer to Program_Usage_All_Options.txt for information on how to
+compile and run SIM.
+

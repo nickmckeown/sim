@@ -1,0 +1,24 @@
+# ../sim -l1000
+# ../sim -l1000
+Numswitches 1
+Switch 0
+	Numinputs    4
+	Numoutputs   4
+	InputAction  defaultInputAction  
+	OutputAction defaultOutputAction
+	Fabric       crossbar
+	Algorithm    lqf
+ 	0	bernoulli_iid_nonuniform -u 0.1 0.1 0.1 0.1  
+	1	bernoulli_iid_nonuniform -u 0.1 0.1 0.1 0.1 
+	2	bernoulli_iid_nonuniform -u 0.1 0.1 0.1 0.1
+	3	bernoulli_iid_nonuniform -u 0.1 0.1 0.1 0.1
+	Stats
+		Arrivals    (0,0)
+		Departures
+		Latency     (*,1)
+		Occupancy   (1,*)
+	Histograms
+		Arrivals 
+		Departures  (*,m)
+		Latency 
+		Occupancy   

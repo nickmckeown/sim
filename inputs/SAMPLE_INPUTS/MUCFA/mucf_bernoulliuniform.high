@@ -1,0 +1,35 @@
+# ../sim -l1000
+Numswitches 1
+Switch 0
+	Numinputs    16
+	Numoutputs   16
+	InputAction  defaultInputAction -o
+	OutputAction defaultOutputAction
+	Fabric       crossbar 
+	Algorithm    mucf
+ 	0	bernoulli_iid_uniform -u 0.800 
+	1	bernoulli_iid_uniform -u 0.800 
+	2	bernoulli_iid_uniform -u 0.800 
+	3	bernoulli_iid_uniform -u 0.800 
+	4	bernoulli_iid_uniform -u 0.800 
+	5	bernoulli_iid_uniform -u 0.800 
+	6	bernoulli_iid_uniform -u 0.800 
+	7	bernoulli_iid_uniform -u 0.800 
+	8	bernoulli_iid_uniform -u 0.800 
+	9	bernoulli_iid_uniform -u 0.800 
+	10	bernoulli_iid_uniform -u 0.800 
+	11	bernoulli_iid_uniform -u 0.800 
+	12	bernoulli_iid_uniform -u 0.800 
+	13	bernoulli_iid_uniform -u 0.800 
+	14	bernoulli_iid_uniform -u 0.800 
+	15	bernoulli_iid_uniform -u 0.800 
+	Stats
+		Arrivals    (1,1)
+		Departures 	(1,1)
+		Latency  	(1,1)
+		Occupancy 	(1,1)
+	Histograms
+		Arrivals 	(1,1)
+		Departures 	(1,1)
+		Latency  	(1,1)
+		Occupancy 	(1,1)

@@ -1,0 +1,429 @@
+##################################################
+../../bin/sim -l1000 -f 32x32.fifo.wp 
+This is Sim version 2.36, Released May 11, 2017 
+
+# Date Thu May 11 17:39:13 2017
+# Machine DN525eqo.SUNet
+##################################################
+
+Number of switches: 1
+
+============================================
+================ Switch 0 =================
+============================================
+Creating switch with 32 inputs, 32 outputs and 4 priorities
+InputAction: defaultInputAction
+    Max cells per input buffer: INFINITE
+    Max cells per input FIFO: INFINITE
+OutputAction: strictPriorityOutputAction
+Fabric: crossbar
+Switch Scheduling Algorithm: pri_fifo
+Infinite output buffers.
+Input: 0  Traffic model: bernoulli_iid_uniform
+    Levels of priority 4
+priority 0  utilization 0.250000
+priority 1  utilization 0.250000
+priority 2  utilization 0.250000
+priority 3  utilization 0.250000
+Input: 1  Traffic model: bernoulli_iid_uniform
+    Levels of priority 4
+priority 0  utilization 0.250000
+priority 1  utilization 0.250000
+priority 2  utilization 0.250000
+priority 3  utilization 0.250000
+Input: 2  Traffic model: bernoulli_iid_uniform
+    Levels of priority 4
+priority 0  utilization 0.250000
+priority 1  utilization 0.250000
+priority 2  utilization 0.250000
+priority 3  utilization 0.250000
+Input: 3  Traffic model: bernoulli_iid_uniform
+    Levels of priority 4
+priority 0  utilization 0.250000
+priority 1  utilization 0.250000
+priority 2  utilization 0.250000
+priority 3  utilization 0.250000
+Input: 4  Traffic model: bernoulli_iid_uniform
+    Levels of priority 4
+priority 0  utilization 0.250000
+priority 1  utilization 0.250000
+priority 2  utilization 0.250000
+priority 3  utilization 0.250000
+Input: 5  Traffic model: bernoulli_iid_uniform
+    Levels of priority 4
+priority 0  utilization 0.250000
+priority 1  utilization 0.250000
+priority 2  utilization 0.250000
+priority 3  utilization 0.250000
+Input: 6  Traffic model: bernoulli_iid_uniform
+    Levels of priority 4
+priority 0  utilization 0.250000
+priority 1  utilization 0.250000
+priority 2  utilization 0.250000
+priority 3  utilization 0.250000
+Input: 7  Traffic model: bernoulli_iid_uniform
+    Levels of priority 4
+priority 0  utilization 0.250000
+priority 1  utilization 0.250000
+priority 2  utilization 0.250000
+priority 3  utilization 0.250000
+Input: 8  Traffic model: bernoulli_iid_uniform
+    Levels of priority 4
+priority 0  utilization 0.250000
+priority 1  utilization 0.250000
+priority 2  utilization 0.250000
+priority 3  utilization 0.250000
+Input: 9  Traffic model: bernoulli_iid_uniform
+    Levels of priority 4
+priority 0  utilization 0.250000
+priority 1  utilization 0.250000
+priority 2  utilization 0.250000
+priority 3  utilization 0.250000
+Input: 10  Traffic model: bernoulli_iid_uniform
+    Levels of priority 4
+priority 0  utilization 0.250000
+priority 1  utilization 0.250000
+priority 2  utilization 0.250000
+priority 3  utilization 0.250000
+Input: 11  Traffic model: bernoulli_iid_uniform
+    Levels of priority 4
+priority 0  utilization 0.250000
+priority 1  utilization 0.250000
+priority 2  utilization 0.250000
+priority 3  utilization 0.250000
+Input: 12  Traffic model: bernoulli_iid_uniform
+    Levels of priority 4
+priority 0  utilization 0.250000
+priority 1  utilization 0.250000
+priority 2  utilization 0.250000
+priority 3  utilization 0.250000
+Input: 13  Traffic model: bernoulli_iid_uniform
+    Levels of priority 4
+priority 0  utilization 0.250000
+priority 1  utilization 0.250000
+priority 2  utilization 0.250000
+priority 3  utilization 0.250000
+Input: 14  Traffic model: bernoulli_iid_uniform
+    Levels of priority 4
+priority 0  utilization 0.250000
+priority 1  utilization 0.250000
+priority 2  utilization 0.250000
+priority 3  utilization 0.250000
+Input: 15  Traffic model: bernoulli_iid_uniform
+    Levels of priority 4
+priority 0  utilization 0.250000
+priority 1  utilization 0.250000
+priority 2  utilization 0.250000
+priority 3  utilization 0.250000
+Input: 16  Traffic model: bernoulli_iid_uniform
+    Levels of priority 4
+priority 0  utilization 0.250000
+priority 1  utilization 0.250000
+priority 2  utilization 0.250000
+priority 3  utilization 0.250000
+Input: 17  Traffic model: bernoulli_iid_uniform
+    Levels of priority 4
+priority 0  utilization 0.250000
+priority 1  utilization 0.250000
+priority 2  utilization 0.250000
+priority 3  utilization 0.250000
+Input: 18  Traffic model: bernoulli_iid_uniform
+    Levels of priority 4
+priority 0  utilization 0.250000
+priority 1  utilization 0.250000
+priority 2  utilization 0.250000
+priority 3  utilization 0.250000
+Input: 19  Traffic model: bernoulli_iid_uniform
+    Levels of priority 4
+priority 0  utilization 0.250000
+priority 1  utilization 0.250000
+priority 2  utilization 0.250000
+priority 3  utilization 0.250000
+Input: 20  Traffic model: bernoulli_iid_uniform
+    Levels of priority 4
+priority 0  utilization 0.250000
+priority 1  utilization 0.250000
+priority 2  utilization 0.250000
+priority 3  utilization 0.250000
+Input: 21  Traffic model: bernoulli_iid_uniform
+    Levels of priority 4
+priority 0  utilization 0.250000
+priority 1  utilization 0.250000
+priority 2  utilization 0.250000
+priority 3  utilization 0.250000
+Input: 22  Traffic model: bernoulli_iid_uniform
+    Levels of priority 4
+priority 0  utilization 0.250000
+priority 1  utilization 0.250000
+priority 2  utilization 0.250000
+priority 3  utilization 0.250000
+Input: 23  Traffic model: bernoulli_iid_uniform
+    Levels of priority 4
+priority 0  utilization 0.250000
+priority 1  utilization 0.250000
+priority 2  utilization 0.250000
+priority 3  utilization 0.250000
+Input: 24  Traffic model: bernoulli_iid_uniform
+    Levels of priority 4
+priority 0  utilization 0.250000
+priority 1  utilization 0.250000
+priority 2  utilization 0.250000
+priority 3  utilization 0.250000
+Input: 25  Traffic model: bernoulli_iid_uniform
+    Levels of priority 4
+priority 0  utilization 0.250000
+priority 1  utilization 0.250000
+priority 2  utilization 0.250000
+priority 3  utilization 0.250000
+Input: 26  Traffic model: bernoulli_iid_uniform
+    Levels of priority 4
+priority 0  utilization 0.250000
+priority 1  utilization 0.250000
+priority 2  utilization 0.250000
+priority 3  utilization 0.250000
+Input: 27  Traffic model: bernoulli_iid_uniform
+    Levels of priority 4
+priority 0  utilization 0.250000
+priority 1  utilization 0.250000
+priority 2  utilization 0.250000
+priority 3  utilization 0.250000
+Input: 28  Traffic model: bernoulli_iid_uniform
+    Levels of priority 4
+priority 0  utilization 0.250000
+priority 1  utilization 0.250000
+priority 2  utilization 0.250000
+priority 3  utilization 0.250000
+Input: 29  Traffic model: bernoulli_iid_uniform
+    Levels of priority 4
+priority 0  utilization 0.250000
+priority 1  utilization 0.250000
+priority 2  utilization 0.250000
+priority 3  utilization 0.250000
+Input: 30  Traffic model: bernoulli_iid_uniform
+    Levels of priority 4
+priority 0  utilization 0.250000
+priority 1  utilization 0.250000
+priority 2  utilization 0.250000
+priority 3  utilization 0.250000
+Input: 31  Traffic model: bernoulli_iid_uniform
+    Levels of priority 4
+priority 0  utilization 0.250000
+priority 1  utilization 0.250000
+priority 2  utilization 0.250000
+priority 3  utilization 0.250000
+
+Statistics Enabled for switch: 0
+---------------------------------
+    Arrival Statistics: 
+    Departures Statistics: 
+    Latency Statistics: 
+    Occupancy Statistics: 
+    Arrival Histogram: 
+    Departures Histogram: 
+    Latency Histogram: 
+    Occupancy Histogram: 
+ResetStatsTime 500
+Resetting stats for switch: 0 at time 0
+Resetting stats for switch: 0 at time 500
+
+
+
+===============================================================
+======================== RESULTS ==============================
+===============================================================
+Simulation stopped at time: 1000
+Maximum memory used: 1302528 bytes
+# Simulation runtime: 0 secs
+
+====================================================
+====================== SWITCH    0 =================
+====================================================
+  Traffic Information
+  -------------------
+  I/P  model  Util
+  0  bernoulli_iid_uniform  IN: 1.000000 OUT: 1.000000
+  (0,0)    0	0.007000
+  (0,0)    1	0.009000
+  (0,0)    2	0.009000
+  (0,0)    3	0.004000
+  1  bernoulli_iid_uniform  IN: 1.000000 OUT: 1.000000
+  2  bernoulli_iid_uniform  IN: 1.000000 OUT: 1.000000
+  3  bernoulli_iid_uniform  IN: 1.000000 OUT: 1.000000
+  4  bernoulli_iid_uniform  IN: 1.000000 OUT: 1.000000
+  5  bernoulli_iid_uniform  IN: 1.000000 OUT: 1.000000
+  6  bernoulli_iid_uniform  IN: 1.000000 OUT: 1.000000
+  7  bernoulli_iid_uniform  IN: 1.000000 OUT: 1.000000
+  8  bernoulli_iid_uniform  IN: 1.000000 OUT: 1.000000
+  9  bernoulli_iid_uniform  IN: 1.000000 OUT: 1.000000
+  10  bernoulli_iid_uniform  IN: 1.000000 OUT: 1.000000
+  11  bernoulli_iid_uniform  IN: 1.000000 OUT: 1.000000
+  12  bernoulli_iid_uniform  IN: 1.000000 OUT: 1.000000
+  13  bernoulli_iid_uniform  IN: 1.000000 OUT: 1.000000
+  14  bernoulli_iid_uniform  IN: 1.000000 OUT: 1.000000
+  15  bernoulli_iid_uniform  IN: 1.000000 OUT: 1.000000
+  16  bernoulli_iid_uniform  IN: 1.000000 OUT: 1.000000
+  17  bernoulli_iid_uniform  IN: 1.000000 OUT: 1.000000
+  18  bernoulli_iid_uniform  IN: 1.000000 OUT: 1.000000
+  19  bernoulli_iid_uniform  IN: 1.000000 OUT: 1.000000
+  20  bernoulli_iid_uniform  IN: 1.000000 OUT: 1.000000
+  21  bernoulli_iid_uniform  IN: 1.000000 OUT: 1.000000
+  22  bernoulli_iid_uniform  IN: 1.000000 OUT: 1.000000
+  23  bernoulli_iid_uniform  IN: 1.000000 OUT: 1.000000
+  24  bernoulli_iid_uniform  IN: 1.000000 OUT: 1.000000
+  25  bernoulli_iid_uniform  IN: 1.000000 OUT: 1.000000
+  26  bernoulli_iid_uniform  IN: 1.000000 OUT: 1.000000
+  27  bernoulli_iid_uniform  IN: 1.000000 OUT: 1.000000
+  28  bernoulli_iid_uniform  IN: 1.000000 OUT: 1.000000
+  29  bernoulli_iid_uniform  IN: 1.000000 OUT: 1.000000
+  30  bernoulli_iid_uniform  IN: 1.000000 OUT: 1.000000
+  31  bernoulli_iid_uniform  IN: 1.000000 OUT: 1.000000
+
+
+  INPUT BUFFER ARRIVAL STATS
+  --------------------------
+  I/P O/P   Pri  Avg   SD
+  -----------------------
+    No Stats Enabled. 
+
+  INPUT BUFFER DEPARTURE STATS
+  ----------------------------
+  I/P O/P   Pri  Avg   SD
+  -----------------------
+    No Stats Enabled. 
+
+  INPUT BUFFER LATENCY STATS
+  --------------------------
+  I/P O/P   Pri  Avg   SD
+  -----------------------
+    No Stats Enabled. 
+
+  INPUT BUFFER TIME AVG OCCUPANCY STATS
+  -------------------------------------
+  I/P O/P   Pri  Avg   SD
+  -----------------------
+    No Stats Enabled. 
+
+
+  INPUT BUFFER ARRIVAL HISTOGRAMS
+  --------------------------
+    No Histograms Enabled. 
+
+  INPUT BUFFER DEPARTURE HISTOGRAMS
+  ----------------------------
+    No Histograms Enabled. 
+
+  INPUT BUFFER LATENCY HISTOGRAMS
+  --------------------------
+    No Histograms Enabled. 
+
+  INPUT BUFFER TIME AVG OCCUPANCY HISTOGRAMS
+  -------------------------------------
+    No Histograms Enabled. 
+
+  OUTPUT BUFFER ARRIVAL STATS
+  ---------------------------
+  O/P   Avg   SD
+  --------------
+    No Stats Enabled. 
+
+  OUTPUT BUFFER DEPARTURE STATS
+  -----------------------------
+  O/P   Avg   SD
+  --------------
+    No Stats Enabled. 
+
+  OUTPUT BUFFER LATENCY STATS
+  ---------------------------
+  O/P   Avg   SD
+  --------------
+    No Stats Enabled. 
+
+  OUTPUT BUFFER TIME AVG OCCUPANCY STATS
+  --------------------------------------
+  O/P   Avg   SD
+  --------------
+    No Stats Enabled. 
+
+  Latency statistics
+  ------------------
+                       Avg       SD     Number
+                     -------------------------
+     Input Latency:  54.68458 115.27775    (14514)
+    Fabric Latency:         0        0    (14514)
+    Output Latency:         0        0    (14514)
+    Switch Latency:  54.68458 115.27775    (14514)
+
+UNICAST:
+    Input latency per priority:---->
+     0                     0.21966578 0.55323596    (4129)
+     1                     1.5376183 2.1795249    (4014)
+     2                     10.58314 9.9994449    (3879)
+     3                     299.18178 70.449317    (2492)
+MULTICAST:
+    Input latency per priority:---->
+     0                            0        0    (0)
+     1                            0        0    (0)
+     2                            0        0    (0)
+     3                            0        0    (0)
+               Avg:  54.68458 115.27775    (14514)
+
+UNICAST:
+    Output latency per priority:---->
+     0                            0        0    (4129)
+     1                            0        0    (4014)
+     2                            0        0    (3879)
+     3                            0        0    (2492)
+MULTICAST:
+    Output latency per priority:---->
+     0                            0        0    (0)
+     1                            0        0    (0)
+     2                            0        0    (0)
+     3                            0        0    (0)
+               Avg:         0        0    (14514)
+
+
+  Crossbar statistics
+  -------------------
+                       Avg       SD     Number
+                     -------------------------
+Match Size:            29.028 1.2374231    (500)
+
+  OUTPUT BURSTINESS
+  -----------------
+   O/P  Avg   SD   
+  -----------------
+    0    1.005   0.067
+    1    1.007   0.082
+    2    1.011   0.103
+    3    1.009   0.093
+    4    1.005   0.068
+    5    1.009   0.092
+    6    1.002   0.046
+    7    1.002   0.048
+    8    1.008   0.091
+    9    1.007   0.081
+   10    1.002   0.047
+   11    1.009   0.093
+   12    1.007   0.082
+   13    1.006   0.080
+   14    1.009   0.092
+   15    1.005   0.069
+   16    1.004   0.066
+   17    1.006   0.079
+   18    1.004   0.066
+   19    1.000   0.000
+   20    1.005   0.068
+   21    1.004   0.067
+   22    1.013   0.115
+   23    1.016   0.127
+   24    1.002   0.048
+   25    1.007   0.080
+   26    1.011   0.105
+   27    1.007   0.083
+   28    1.002   0.047
+   29    1.011   0.102
+   30    1.007   0.082
+   31    1.020   0.140
+-----------------------------
+Total Latency over all cells:  54.68458 115.27775    (14514)
+-----------------------------

@@ -1,0 +1,27 @@
+# sim -l1000
+Numswitches 1
+Switch 0
+	Numinputs    8
+	Numoutputs   8
+	InputAction  defaultInputAction  
+	OutputAction defaultOutputAction
+	Fabric       crossbar
+	Algorithm	 islip -n 2
+	0	bursty_nonuniform  -u 0.115 0.115 0.115 0.115 0.115 0.115 0.115 0.115
+	1	bursty_nonuniform  -u 0.115 0.115 0.115 0.115 0.115 0.115 0.115 0.115
+	2	bursty_nonuniform  -u 0.115 0.115 0.115 0.115 0.115 0.115 0.115 0.115
+	3	bursty_nonuniform  -u 0.115 0.115 0.115 0.115 0.115 0.115 0.115 0.115
+	4	bursty_nonuniform  -u 0.115 0.115 0.115 0.115 0.115 0.115 0.115 0.115
+	5	bursty_nonuniform  -u 0.115 0.115 0.115 0.115 0.115 0.115 0.115 0.115
+	6	bursty_nonuniform  -u 0.115 0.115 0.115 0.115 0.115 0.115 0.115 0.115
+	7	bursty_nonuniform  -u 0.12375 0.10 0.12375 0.12375 0.12375 0.12375 0.12375 0.12375
+	Stats
+		Arrivals    (0,0)
+		Departures
+		Latency     (*,1)
+		Occupancy   (1,*)
+	Histograms
+		Arrivals 
+		Departures  (*,m)
+		Latency 
+		Occupancy   

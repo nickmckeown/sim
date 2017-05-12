@@ -1,0 +1,351 @@
+##################################################
+../../bin/sim -l10000 -f 5x5.slip.wp.nonuniform 
+This is Sim version 2.36, Released May 11, 2017 
+
+# Date Thu May 11 17:39:14 2017
+# Machine DN525eqo.SUNet
+##################################################
+
+Number of switches: 1
+
+============================================
+================ Switch 0 =================
+============================================
+Creating switch with 5 inputs, 5 outputs and 4 priorities
+InputAction: defaultInputAction
+    Max cells per input buffer: INFINITE
+    Max cells per input FIFO: INFINITE
+OutputAction: strictPriorityOutputAction
+Fabric: crossbar
+Switch Scheduling Algorithm: pri_islip
+numIterations 1
+Input: 0  Traffic model: bernoulli_iid_nonuniform
+priority levels is 4 
+mcastFraction is 0.100000 
+rstring is 1:4:3:2 
+      Output: 0 utilization: 0.100000
+      Output: 1 utilization: 0.200000
+      Output: 2 utilization: 0.100000
+      Output: 3 utilization: 0.300000
+      Output: 4 utilization: 0.050000
+Levels of priority 4
+priority 0   utilization 0.075000
+priority 1   utilization 0.300000
+priority 2   utilization 0.225000
+priority 3   utilization 0.150000
+    Generate UNICAST and MULTICAST cells.
+    Using default fanout: U[0,2^5]
+    Fraction of cells that are multicast 0.100000
+Input: 1  Traffic model: bernoulli_iid_nonuniform
+priority levels is 4 
+mcastFraction is 0.100000 
+rstring is 1:4:3:2 
+      Output: 0 utilization: 0.100000
+      Output: 1 utilization: 0.200000
+      Output: 2 utilization: 0.100000
+      Output: 3 utilization: 0.300000
+      Output: 4 utilization: 0.050000
+Levels of priority 4
+priority 0   utilization 0.075000
+priority 1   utilization 0.300000
+priority 2   utilization 0.225000
+priority 3   utilization 0.150000
+    Generate UNICAST and MULTICAST cells.
+    Using default fanout: U[0,2^5]
+    Fraction of cells that are multicast 0.100000
+Input: 2  Traffic model: bernoulli_iid_nonuniform
+priority levels is 4 
+mcastFraction is 0.100000 
+rstring is 1:4:3:2 
+      Output: 0 utilization: 0.100000
+      Output: 1 utilization: 0.200000
+      Output: 2 utilization: 0.100000
+      Output: 3 utilization: 0.300000
+      Output: 4 utilization: 0.050000
+Levels of priority 4
+priority 0   utilization 0.075000
+priority 1   utilization 0.300000
+priority 2   utilization 0.225000
+priority 3   utilization 0.150000
+    Generate UNICAST and MULTICAST cells.
+    Using default fanout: U[0,2^5]
+    Fraction of cells that are multicast 0.100000
+Input: 3  Traffic model: bernoulli_iid_nonuniform
+priority levels is 4 
+mcastFraction is 0.100000 
+rstring is 1:4:3:2 
+      Output: 0 utilization: 0.100000
+      Output: 1 utilization: 0.200000
+      Output: 2 utilization: 0.100000
+      Output: 3 utilization: 0.300000
+      Output: 4 utilization: 0.050000
+Levels of priority 4
+priority 0   utilization 0.075000
+priority 1   utilization 0.300000
+priority 2   utilization 0.225000
+priority 3   utilization 0.150000
+    Generate UNICAST and MULTICAST cells.
+    Using default fanout: U[0,2^5]
+    Fraction of cells that are multicast 0.100000
+Input: 4  Traffic model: bernoulli_iid_nonuniform
+priority levels is 4 
+mcastFraction is 0.100000 
+rstring is 1:4:3:2 
+      Output: 0 utilization: 0.100000
+      Output: 1 utilization: 0.200000
+      Output: 2 utilization: 0.100000
+      Output: 3 utilization: 0.300000
+      Output: 4 utilization: 0.050000
+Levels of priority 4
+priority 0   utilization 0.075000
+priority 1   utilization 0.300000
+priority 2   utilization 0.225000
+priority 3   utilization 0.150000
+    Generate UNICAST and MULTICAST cells.
+    Using default fanout: U[0,2^5]
+    Fraction of cells that are multicast 0.100000
+
+Statistics Enabled for switch: 0
+---------------------------------
+    Arrival Statistics: 
+    Departures Statistics: 
+    Latency Statistics: 
+    Occupancy Statistics: 
+      Enabled for i/p buffer (0,0)
+      Enabled for o/p buffer 0
+    Arrival Histogram: 
+    Departures Histogram: 
+    Latency Histogram: 
+      Enabled for i/p buffer (0,0)
+      Enabled for i/p buffer (0,0)
+      Enabled for i/p buffer (0,0)
+      Enabled for i/p buffer (0,0)
+    Occupancy Histogram: 
+ResetStatsTime 5000
+Resetting stats for switch: 0 at time 0
+Resetting stats for switch: 0 at time 5000
+
+
+
+===============================================================
+======================== RESULTS ==============================
+===============================================================
+Simulation stopped at time: 10000
+Maximum memory used: 1523712 bytes
+# Simulation runtime: 0 secs
+
+====================================================
+====================== SWITCH    0 =================
+====================================================
+  Traffic Information
+  -------------------
+  I/P  model  Util
+  0  bernoulli_iid_nonuniform  0.750000
+  (0,0)    0	0.007400
+  (0,0)    1	0.034600
+  (0,0)    2	0.031300
+  (0,0)    3	0.018800
+MCAST input cells:
+  (0)    0	0.006400
+  (0)    1	0.030500
+  (0)    2	0.023800
+  (0)    3	0.014200
+MCAST output cells:
+  (0)    0	0.016457
+  (0)    1	0.078429
+  (0)    2	0.061200
+  (0)    3	0.036514
+       Fanout stats: 2.5714286 1.0661866    (749)
+  1  bernoulli_iid_nonuniform  0.740300
+       Fanout stats: 2.6302632 1.0569967    (760)
+  2  bernoulli_iid_nonuniform  0.749400
+       Fanout stats: 2.567602 1.0316528    (784)
+  3  bernoulli_iid_nonuniform  0.752300
+       Fanout stats: 2.6129032 1.0236758    (713)
+  4  bernoulli_iid_nonuniform  0.745800
+       Fanout stats: 2.5519126 1.0115638    (732)
+
+
+  INPUT BUFFER ARRIVAL STATS
+  --------------------------
+  I/P O/P   Pri  Avg   SD
+  -----------------------
+    No Stats Enabled. 
+
+  INPUT BUFFER DEPARTURE STATS
+  ----------------------------
+  I/P O/P   Pri  Avg   SD
+  -----------------------
+    No Stats Enabled. 
+
+  INPUT BUFFER LATENCY STATS
+  --------------------------
+  I/P O/P   Pri  Avg   SD
+  -----------------------
+    No Stats Enabled. 
+
+  INPUT BUFFER TIME AVG OCCUPANCY STATS
+  -------------------------------------
+  I/P O/P   Pri  Avg   SD
+  -----------------------
+    0   0   0   0.00020 0.01414 (4999)
+    0   0   1   0.00520 0.07193 (4999)
+    0   0   2   0.03201 0.17939 (4999)
+    0   0   3   0.03641 0.19463 (4999)
+
+
+  INPUT BUFFER ARRIVAL HISTOGRAMS
+  --------------------------
+    No Histograms Enabled. 
+
+  INPUT BUFFER DEPARTURE HISTOGRAMS
+  ----------------------------
+    No Histograms Enabled. 
+
+  INPUT BUFFER LATENCY HISTOGRAMS
+  --------------------------
+
+----------------------------------------------------------
+Histogram of "Latency Through Queue" for list: Input Buffer (0,0), pri=0
+----------------------------------------------------------
+Cell Latency:
+Histogram: Latency Through Queue
+  Bin               #    %Total  %Cumulative
+--------------------------------------------
+0                  37 100.0000 100.0000
+Total number counted: 37
+================================================
+
+----------------------------------------------------------
+Histogram of "Latency Through Queue" for list: Input Buffer (0,0), pri=1
+----------------------------------------------------------
+Cell Latency:
+Histogram: Latency Through Queue
+  Bin               #    %Total  %Cumulative
+--------------------------------------------
+0                 180  98.3607  98.3607
+2                   3   1.6393 100.0000
+Total number counted: 183
+================================================
+
+----------------------------------------------------------
+Histogram of "Latency Through Queue" for list: Input Buffer (0,0), pri=2
+----------------------------------------------------------
+Cell Latency:
+Histogram: Latency Through Queue
+  Bin               #    %Total  %Cumulative
+--------------------------------------------
+0                 121  74.2331  74.2331
+2                  30  18.4049  92.6380
+4                  11   6.7485  99.3865
+8                   1   0.6135 100.0000
+Total number counted: 163
+================================================
+
+----------------------------------------------------------
+Histogram of "Latency Through Queue" for list: Input Buffer (0,0), pri=3
+----------------------------------------------------------
+Cell Latency:
+Histogram: Latency Through Queue
+  Bin               #    %Total  %Cumulative
+--------------------------------------------
+0                  52  56.5217  56.5217
+2                  22  23.9130  80.4348
+4                  14  15.2174  95.6522
+8                   3   3.2609  98.9130
+16                  1   1.0870 100.0000
+Total number counted: 92
+================================================
+
+  INPUT BUFFER TIME AVG OCCUPANCY HISTOGRAMS
+  -------------------------------------
+    No Histograms Enabled. 
+
+  OUTPUT BUFFER ARRIVAL STATS
+  ---------------------------
+  O/P   Avg   SD
+  --------------
+    No Stats Enabled. 
+
+  OUTPUT BUFFER DEPARTURE STATS
+  -----------------------------
+  O/P   Avg   SD
+  --------------
+    No Stats Enabled. 
+
+  OUTPUT BUFFER LATENCY STATS
+  ---------------------------
+  O/P   Avg   SD
+  --------------
+    No Stats Enabled. 
+
+  OUTPUT BUFFER TIME AVG OCCUPANCY STATS
+  --------------------------------------
+  O/P   Avg   SD
+  --------------
+    0 0.000 0.000 (4999)
+    0 0.000 0.000 (4999)
+    0 0.000 0.000 (4999)
+    0 0.000 0.000 (4999)
+
+Avg Number Synchronized Output Schedulers:         0        0    (0)
+Avg Number of Iterations:    0.3684 0.48237065    (5000)
+Average Grant Latency    4.4889
+Average Accept Latency   0.0000
+
+  Latency statistics
+  ------------------
+                       Avg       SD     Number
+                     -------------------------
+     Input Latency:  230.13302 830.02426    (15103)
+    Fabric Latency:         0        0    (15103)
+    Output Latency:         0        0    (15103)
+    Switch Latency:  230.13302 830.02426    (15103)
+
+UNICAST:
+    Input latency per priority:---->
+     0                     0.042665108 0.210598    (1711)
+     1                     0.85430365 1.7646554    (6692)
+     2                     559.66357 865.46348    (4625)
+     3                     424.80241 1688.7374    (2075)
+MULTICAST:
+    Input latency per priority:---->
+     0                            0        0    (0)
+     1                            0        0    (0)
+     2                            0        0    (0)
+     3                            0        0    (0)
+               Avg:  230.13302 830.02426    (15103)
+
+UNICAST:
+    Output latency per priority:---->
+     0                            0        0    (1711)
+     1                            0        0    (6692)
+     2                            0        0    (4625)
+     3                            0        0    (2075)
+MULTICAST:
+    Output latency per priority:---->
+     0                            0        0    (0)
+     1                            0        0    (0)
+     2                            0        0    (0)
+     3                            0        0    (0)
+               Avg:         0        0    (15103)
+
+
+  Crossbar statistics
+  -------------------
+                       Avg       SD     Number
+                     -------------------------
+Match Size:            3.0206 0.74630801    (5000)
+
+  OUTPUT BURSTINESS
+  -----------------
+   O/P  Avg   SD   
+  -----------------
+    0    1.009   0.095
+    1    1.018   0.138
+    2    1.012   0.109
+    3    1.026   0.166
+    4    1.002   0.043
+-----------------------------
+Total Latency over all cells:  230.13302 830.02426    (15103)
+-----------------------------

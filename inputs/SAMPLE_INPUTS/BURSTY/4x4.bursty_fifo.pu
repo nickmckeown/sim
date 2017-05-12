@@ -1,0 +1,25 @@
+# ../sim -l1000
+# ../sim -l1000
+Numswitches 1
+Switch 0
+	Numinputs    4
+	Numoutputs   4
+	PriorityLevels	4
+	InputAction  defaultInputAction  
+	OutputAction strictPriorityOutputAction
+	Fabric       crossbar
+	Algorithm	pri_fifo
+	0	bursty  -p 4 -u 0.2 -r 1:1:1:1
+	1	bursty  
+	2	bursty  -p 4 -u 0.3 -r 5:6:7:8
+	3	bursty  -p 4 -u 0.2 -r 0.05:0.05:0.05:0.05
+	Stats
+		Arrivals
+		Departures
+		Latency   
+		Occupancy 
+	Histograms
+		Arrivals 
+		Departures
+		Latency 
+		Occupancy 

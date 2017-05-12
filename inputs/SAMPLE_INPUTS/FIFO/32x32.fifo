@@ -1,0 +1,52 @@
+# ../sim -l1000, fifo.c has been changed with respect to the old version
+Numswitches 1
+Switch 0
+	Numinputs    32
+	Numoutputs   32
+	PriorityLevels	1
+	InputAction  defaultInputAction  
+	OutputAction strictPriorityOutputAction
+	Fabric       crossbar
+	Algorithm	fifo
+	0	bernoulli_iid_uniform 
+	1	bernoulli_iid_uniform 
+	2	bernoulli_iid_uniform 
+	3	bernoulli_iid_uniform 
+	4	bernoulli_iid_uniform 
+	5	bernoulli_iid_uniform
+	6	bernoulli_iid_uniform  
+	7	bernoulli_iid_uniform  
+	8	bernoulli_iid_uniform  
+	9	bernoulli_iid_uniform  
+	10	bernoulli_iid_uniform 
+	11	bernoulli_iid_uniform  
+	12	bernoulli_iid_uniform  
+	13	bernoulli_iid_uniform  
+	14	bernoulli_iid_uniform  
+	15	bernoulli_iid_uniform  
+	16	bernoulli_iid_uniform  
+	17	bernoulli_iid_uniform  
+	18	bernoulli_iid_uniform  
+	19	bernoulli_iid_uniform  
+	20	bernoulli_iid_uniform 
+	21	bernoulli_iid_uniform 
+	22	bernoulli_iid_uniform 
+	23	bernoulli_iid_uniform 
+	24	bernoulli_iid_uniform 
+	25	bernoulli_iid_uniform 
+	26	bernoulli_iid_uniform 
+	27	bernoulli_iid_uniform 
+	28	bernoulli_iid_uniform 
+	29	bernoulli_iid_uniform 
+	30	bernoulli_iid_uniform 
+	31	bernoulli_iid_uniform 
+	Stats
+		Arrivals
+		Departures
+		Latency   
+		Occupancy 
+	Histograms
+		Arrivals 
+		Departures
+		Latency 
+		Occupancy 

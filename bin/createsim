@@ -1,0 +1,29 @@
+#!/bin/csh
+
+# Shell script to create sim with sim enabled or disabled.
+
+if( $1 == "-sim" ) then
+        goto CREATESIM
+endif
+
+if( $1 == "-simgraph" ) then
+        goto CREATESIMWITHGRAPH
+endif
+
+
+CREATESIMWITHGRAPH:
+
+echo --------------------------------------------------------------------
+echo   SimGraph support disabled in the present version.
+# echo Creating Sim with simgraph enabled
+# echo --------------------------------------------------------------------
+# make GRAPHSRC=graph.c AUXHEAD=aux.h GRAPHHEAD=graph.h SIMGRAPH=-D_SIM_ AUXSRC=aux.c 
+exit
+
+CREATESIM:
+
+echo --------------------------------------------------------------------
+echo Creating Sim with simgraph disabled
+echo --------------------------------------------------------------------
+make
+exit

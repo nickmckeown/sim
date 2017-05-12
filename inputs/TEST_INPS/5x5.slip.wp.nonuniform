@@ -1,0 +1,25 @@
+# sim -l10000
+Numswitches 1
+Switch 0
+	Numinputs    5
+	Numoutputs   5
+	PriorityLevels	4
+	InputAction  defaultInputAction  
+	OutputAction strictPriorityOutputAction
+	Fabric       crossbar
+	Algorithm	pri_islip
+	0	bernoulli_iid_nonuniform  -p4 -m 0.1 -r 1:4:3:2 -u 0.1 0.2 0.1 0.3 0.05
+	1	bernoulli_iid_nonuniform  -p4 -m 0.1 -r 1:4:3:2 -u 0.1 0.2 0.1 0.3 0.05
+	2	bernoulli_iid_nonuniform  -p4 -m 0.1 -r 1:4:3:2 -u 0.1 0.2 0.1 0.3 0.05
+	3	bernoulli_iid_nonuniform  -p4 -m 0.1 -r 1:4:3:2 -u 0.1 0.2 0.1 0.3 0.05
+	4	bernoulli_iid_nonuniform  -p4 -m 0.1 -r 1:4:3:2 -u 0.1 0.2 0.1 0.3 0.05
+	Stats
+		Arrivals
+		Departures
+		Latency   
+		Occupancy (0,0) 0
+	Histograms
+		Arrivals 
+		Departures
+		Latency (0,0)
+		Occupancy 

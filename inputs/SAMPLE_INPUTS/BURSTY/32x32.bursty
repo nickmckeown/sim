@@ -1,0 +1,53 @@
+# ../sim -l1000
+# ../sim -l1000, fifo.c has been changed with respect to the old version
+Numswitches 1
+Switch 0
+	Numinputs    32
+	Numoutputs   32
+	PriorityLevels	4
+	InputAction  defaultInputAction  
+	OutputAction strictPriorityOutputAction
+	Fabric       crossbar
+	Algorithm	pri_fifo
+	0	bursty   
+	1	bursty    
+	2	bursty    
+	3	bursty    
+	4	bursty    
+	5	bursty    
+	6	bursty    
+	7	bursty    
+	8	bursty    
+	9	bursty    
+	10	bursty    
+	11	bursty    
+	12	bursty    
+	13	bursty    
+	14	bursty    
+	15	bursty    
+	16	bursty    
+	17	bursty    
+	18	bursty    
+	19	bursty    
+	20	bursty    
+	21	bursty    
+	22	bursty    
+	23	bursty    
+	24	bursty    
+	25	bursty    
+	26	bursty    
+	27	bursty    
+	28	bursty    
+	29	bursty    
+	30	bursty    
+	31	bursty    
+	Stats
+		Arrivals
+		Departures
+		Latency   
+		Occupancy 
+	Histograms
+		Arrivals 
+		Departures
+		Latency 
+		Occupancy 

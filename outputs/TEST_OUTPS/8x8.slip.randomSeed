@@ -1,0 +1,310 @@
+##################################################
+../../bin/sim -l1000 -u8274 -f 8x8.slip.randomSeed 
+This is Sim version 2.36, Released May 11, 2017 
+
+# Date Thu May 11 17:39:14 2017
+# Machine DN525eqo.SUNet
+##################################################
+Simulation using seed 8274
+
+Number of switches: 1
+
+============================================
+================ Switch 0 =================
+============================================
+Creating switch with 8 inputs, 8 outputs and 1 priorities
+InputAction: defaultInputAction
+    Max cells per input buffer: INFINITE
+    Max cells per input FIFO: INFINITE
+OutputAction: defaultOutputAction
+Fabric: crossbar
+Switch Scheduling Algorithm: islip
+numIterations 3
+Input: 0  Traffic model: bernoulli_iid_uniform
+  Using default priority levels
+  Using default priority levels
+    Levels of priority 1
+priority 0  utilization 0.420000
+Input: 1  Traffic model: bernoulli_iid_uniform
+  Using default priority levels
+  Using default priority levels
+    Levels of priority 1
+priority 0  utilization 0.480000
+Input: 2  Traffic model: bernoulli_iid_uniform
+  Using default priority levels
+  Using default priority levels
+    Levels of priority 1
+priority 0  utilization 0.430000
+Input: 3  Traffic model: bernoulli_iid_uniform
+  Using default priority levels
+  Using default priority levels
+    Levels of priority 1
+priority 0  utilization 0.440000
+Input: 4  Traffic model: bernoulli_iid_uniform
+  Using default priority levels
+  Using default priority levels
+    Levels of priority 1
+priority 0  utilization 0.450000
+Input: 5  Traffic model: bernoulli_iid_uniform
+  Using default priority levels
+  Using default priority levels
+    Levels of priority 1
+priority 0  utilization 0.460000
+Input: 6  Traffic model: bernoulli_iid_uniform
+  Using default priority levels
+  Using default priority levels
+    Levels of priority 1
+priority 0  utilization 0.470000
+Input: 7  Traffic model: bernoulli_iid_uniform
+  Using default priority levels
+  Using default priority levels
+    Levels of priority 1
+priority 0  utilization 0.490000
+
+Statistics Enabled for switch: 0
+---------------------------------
+    Arrival Statistics: 
+      Enabled for i/p buffer (0,0)
+    Departures Statistics: 
+    Latency Statistics: 
+      Enabled for i/p buffers (*,1)
+      Enabled for i/p buffers (*,1)
+      Enabled for i/p buffers (*,1)
+      Enabled for i/p buffers (*,1)
+      Enabled for i/p buffers (*,1)
+      Enabled for i/p buffers (*,1)
+      Enabled for i/p buffers (*,1)
+      Enabled for i/p buffers (*,1)
+    Occupancy Statistics: 
+      Enabled for i/p buffers (1,*)
+    Arrival Histogram: 
+    Departures Histogram: 
+      Enabled for all mcast i/p buffers
+    Latency Histogram: 
+    Occupancy Histogram: 
+ResetStatsTime 500
+Resetting stats for switch: 0 at time 0
+Resetting stats for switch: 0 at time 500
+
+
+
+===============================================================
+======================== RESULTS ==============================
+===============================================================
+Simulation stopped at time: 1000
+Maximum memory used: 491520 bytes
+# Simulation runtime: 0 secs
+
+====================================================
+====================== SWITCH    0 =================
+====================================================
+  Traffic Information
+  -------------------
+  I/P  model  Util
+  0  bernoulli_iid_uniform  IN: 0.399000 OUT: 0.399000
+  (0,0)    0	0.050000
+  1  bernoulli_iid_uniform  IN: 0.468000 OUT: 0.468000
+  2  bernoulli_iid_uniform  IN: 0.455000 OUT: 0.455000
+  3  bernoulli_iid_uniform  IN: 0.430000 OUT: 0.430000
+  4  bernoulli_iid_uniform  IN: 0.434000 OUT: 0.434000
+  5  bernoulli_iid_uniform  IN: 0.491000 OUT: 0.491000
+  6  bernoulli_iid_uniform  IN: 0.477000 OUT: 0.477000
+  7  bernoulli_iid_uniform  IN: 0.489000 OUT: 0.489000
+
+
+  INPUT BUFFER ARRIVAL STATS
+  --------------------------
+  I/P O/P   Pri  Avg   SD
+  -----------------------
+    0   0   0   0.05000 0.21794 (20)
+
+  INPUT BUFFER DEPARTURE STATS
+  ----------------------------
+  I/P O/P   Pri  Avg   SD
+  -----------------------
+    No Stats Enabled. 
+
+  INPUT BUFFER LATENCY STATS
+  --------------------------
+  I/P O/P   Pri  Avg   SD
+  -----------------------
+    0   1   0   0.33333 0.54433 (27)
+    1   1   0   0.40000 0.80000 (35)
+    2   1   0   0.81818 1.48639 (33)
+    3   1   0   0.77273 1.04149 (22)
+    4   1   0   0.26923 0.65385 (26)
+    5   1   0   0.20690 0.48276 (29)
+    6   1   0   0.25000 0.53619 (20)
+    7   1   0   0.38889 0.82589 (36)
+
+  INPUT BUFFER TIME AVG OCCUPANCY STATS
+  -------------------------------------
+  I/P O/P   Pri  Avg   SD
+  -----------------------
+    1   0   0   0.02004 0.14014 (499)
+    1   1   0   0.02806 0.16513 (499)
+    1   2   0   0.00401 0.06318 (499)
+    1   3   0   0.03006 0.17075 (499)
+    1   4   0   0.06212 0.28690 (499)
+    1   5   0   0.04208 0.20078 (499)
+    1   6   0   0.01804 0.13308 (499)
+    1   7   0   0.04409 0.21483 (499)
+    1   X 0.248 0.492 (500)
+
+
+  INPUT BUFFER ARRIVAL HISTOGRAMS
+  --------------------------
+    No Histograms Enabled. 
+
+  INPUT BUFFER DEPARTURE HISTOGRAMS
+  ----------------------------
+
+----------------------------------------------------------
+Histogram of "Occupancy seen by Departures" for list: Input 0 mcast buffer, pri=0
+----------------------------------------------------------
+As seen by DEPARTURES:
+Histogram: Occupancy seen by Departures
+  Bin               #    %Total  %Cumulative
+--------------------------------------------
+Total number counted: 0
+================================================
+
+----------------------------------------------------------
+Histogram of "Occupancy seen by Departures" for list: Input 1 mcast buffer, pri=0
+----------------------------------------------------------
+As seen by DEPARTURES:
+Histogram: Occupancy seen by Departures
+  Bin               #    %Total  %Cumulative
+--------------------------------------------
+Total number counted: 0
+================================================
+
+----------------------------------------------------------
+Histogram of "Occupancy seen by Departures" for list: Input 2 mcast buffer, pri=0
+----------------------------------------------------------
+As seen by DEPARTURES:
+Histogram: Occupancy seen by Departures
+  Bin               #    %Total  %Cumulative
+--------------------------------------------
+Total number counted: 0
+================================================
+
+----------------------------------------------------------
+Histogram of "Occupancy seen by Departures" for list: Input 3 mcast buffer, pri=0
+----------------------------------------------------------
+As seen by DEPARTURES:
+Histogram: Occupancy seen by Departures
+  Bin               #    %Total  %Cumulative
+--------------------------------------------
+Total number counted: 0
+================================================
+
+----------------------------------------------------------
+Histogram of "Occupancy seen by Departures" for list: Input 4 mcast buffer, pri=0
+----------------------------------------------------------
+As seen by DEPARTURES:
+Histogram: Occupancy seen by Departures
+  Bin               #    %Total  %Cumulative
+--------------------------------------------
+Total number counted: 0
+================================================
+
+----------------------------------------------------------
+Histogram of "Occupancy seen by Departures" for list: Input 5 mcast buffer, pri=0
+----------------------------------------------------------
+As seen by DEPARTURES:
+Histogram: Occupancy seen by Departures
+  Bin               #    %Total  %Cumulative
+--------------------------------------------
+Total number counted: 0
+================================================
+
+----------------------------------------------------------
+Histogram of "Occupancy seen by Departures" for list: Input 6 mcast buffer, pri=0
+----------------------------------------------------------
+As seen by DEPARTURES:
+Histogram: Occupancy seen by Departures
+  Bin               #    %Total  %Cumulative
+--------------------------------------------
+Total number counted: 0
+================================================
+
+----------------------------------------------------------
+Histogram of "Occupancy seen by Departures" for list: Input 7 mcast buffer, pri=0
+----------------------------------------------------------
+As seen by DEPARTURES:
+Histogram: Occupancy seen by Departures
+  Bin               #    %Total  %Cumulative
+--------------------------------------------
+Total number counted: 0
+================================================
+
+  INPUT BUFFER LATENCY HISTOGRAMS
+  --------------------------
+    No Histograms Enabled. 
+
+  INPUT BUFFER TIME AVG OCCUPANCY HISTOGRAMS
+  -------------------------------------
+    No Histograms Enabled. 
+
+  OUTPUT BUFFER ARRIVAL STATS
+  ---------------------------
+  O/P   Avg   SD
+  --------------
+    No Stats Enabled. 
+
+  OUTPUT BUFFER DEPARTURE STATS
+  -----------------------------
+  O/P   Avg   SD
+  --------------
+    No Stats Enabled. 
+
+  OUTPUT BUFFER LATENCY STATS
+  ---------------------------
+  O/P   Avg   SD
+  --------------
+    No Stats Enabled. 
+
+  OUTPUT BUFFER TIME AVG OCCUPANCY STATS
+  --------------------------------------
+  O/P   Avg   SD
+  --------------
+    No Stats Enabled. 
+
+Avg Number Synchronized Output Schedulers:     4.226 1.4570257    (500)
+Avg Number of Iterations:     1.088 0.31663228    (500)
+Average Grant Latency    0.4564
+Average Accept Latency   0.0000
+
+  Latency statistics
+  ------------------
+                       Avg       SD     Number
+                     -------------------------
+     Input Latency:  0.47272727 0.91945606    (1815)
+    Fabric Latency:         0        0    (1815)
+    Output Latency:         0        0    (1815)
+    Switch Latency:  0.47272727 0.91945606    (1815)
+
+
+
+  Crossbar statistics
+  -------------------
+                       Avg       SD     Number
+                     -------------------------
+Match Size:              3.63 1.1717935    (500)
+
+  OUTPUT BURSTINESS
+  -----------------
+   O/P  Avg   SD   
+  -----------------
+    0    1.026   0.184
+    1    1.032   0.176
+    2    1.034   0.180
+    3    1.027   0.162
+    4    1.037   0.188
+    5    1.017   0.128
+    6    1.023   0.151
+    7    1.028   0.165
+-----------------------------
+Total Latency over all cells:  0.47272727 0.91945606    (1815)
+-----------------------------

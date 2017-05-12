@@ -1,0 +1,206 @@
+This is SIM release v2.36
+-------------------------
+
+Compile Options.
+===============
+
+Compile using "make"
+
+Runtime options.
+================
+usage: sim 
+GENERAL options:
+    -h This help message 
+    -l simulationlength. Default: 100
+    -r resetStatsTime. Default: simLength/10
+    -t Traffic Period Default: 1 
+    -s Fabric Period Default: 1 
+    -e Exit or Output Period Default: 1 
+    -p Indicate progress
+    -f configFilename.Default: none
+    -u globalSeed. Default: None 
+
+Traffic Models:
+----------------------------------------
+Options for "bernoulli_iid_uniform" traffic model:
+    -u utilization. Default: 0.500000
+    -r r0:r1:r2:r3... rP-1, unicast utilization ratio per priority level, where P is the number of priority levels 
+    -p number of prioritylevels of traffic generated. Default: 1
+    -m fraction (in range [0-1]) of cells that are multicast. Default: 0.500000
+    -R r0:r1:r2:r3... rP-1, multicast utilization per priority level, defaults to unicast utilization per priority level if not specified
+    -f fixed fanout for multicast cells. If not set, fanout U[0,2^N]
+Options for "bernoulli_iid_nonuniform" traffic model:
+    -u u0 u1 u2 u3 ... uN-1. Default: 0.500000
+    -m fraction (in range [0-1]) of cells that are multic
+ast. Default: 0.500000
+    -R r0:r1:r2:r3... rP-1, multicast utilization ratio per priority level, defaults to unicast utilization per priority level if not specified
+    -f fixed fanout for multicast cells. If not set, fano
+	  ut U[0,2^N]
+    -p number of prioritylevels of traffic generated. Default: 1
+    -r r0:r1:r2:r3,... rP-1, unicast utilization ratio per priority level,where P is the number of priority levels 
+Options for "bursty" traffic model:
+    -u total utilization.       Default: 0.500000
+    -p number of prioritylevels of traffic generated. Default: 1
+    -r r0:r1:r2:r3: ...rP-1, unicast utilization ratio per priority level, where P is the number of priority levels 
+    -b mean_burst_length. Default: 10.000000
+    -d destination switching probability. Default: 1.000000
+    -c Change destination per-cell rather than per-burst. Default: per burst
+    -m fraction (in range [0-1]) of traffic generated that is multicast. Default: 0.500000
+    -R r0:r1:r2:r3... rP-1, multicast utilization ratio per priority level, defaults to unicast utilization per priority level if not specified
+    -f fixed fanout. Default: U[0,2^N]
+Options for "bursty_nonuniform" traffic model:
+    -u u0 u1 u2 u3 ... uN-1. [Seperate with spaces.]    -p number of prioritylevels of traffic generated. Default: 1
+    -r r0:r1:r2:...rN-1 ratio of unicast utilization in  a priority level 
+    -b mean_burst_length. Default: 10.000000
+    -d destination switching probability. Default: 1.000000
+    -c Change destination per-cell rather than per-burst. Default: per burst
+    -m fraction (in range [0-1]) of traffic generated that is multicast. Default: 0.500000
+    -R r0:r1:r2:r3... rP-1, multicast utilization ratio per priority level, defaults to unicast utilization per priority level if not specified
+    -f fixed fanout. Default: U[0,2^N]
+Options for "keepfull" traffic model:
+    -c c0 c1 c2 c3 ... cN-1. 
+Options for "trace" traffic model:
+   -p. Trace file contains priorities.
+   -f filename. Name of trace file.
+   File format:
+    TIME(u_long) 'U'|'M'(char) PRIORITY(int - optional) DESTN(int or bitmap-string)
+   Note: "trace" can not be called from command line option
+Options for "trace" traffic model:
+"tracePacket" can not be called from command line option
+No options for "null" traffic model.
+Options for "periodicTrace" traffic model:
+    -p period 
+
+Input Actions:
+----------------------------------------
+Options for "default" input action:
+  -m  maxCells per input buffer. Default: Infinite
+  -n  maxCells per fifo. Default: m/(# inputs)
+  -o  Measure output queueing departure times. Default: off
+
+Switch scheduling algorithms:
+----------------------------------------
+Options for "fifo" scheduling algorithm:
+  -m maxCells per output buffer. Default: infinite
+Options for "future" scheduling algorithm:
+    -N num_iterations.   Default: 1
+    -M recycle_list_max. Default: 1
+No Options for "gs_lqf" scheduling algorithm:
+No Options for "gs_ocf" scheduling algorithm:
+No Options for "ilpf" scheduling algorithm:
+Options for "ilqf" scheduling algorithm:
+    -n number_of_iterations. Default: 1
+Options for "iocf" scheduling algorithm:
+    -n number_of_iterations. Default: 1
+No Options for "iopf" scheduling algorithm:
+No Options for "lpf" scheduling algorithm:
+No Options for "lpf_delay" scheduling algorithm:
+No Options for "lqf" scheduling algorithm:
+No Options for "maximum" scheduling algorithm:
+No Options for "maxrand" scheduling algorithm:
+No Options for "maxsize" scheduling algorithm:
+No options for "mcast_conc_residue" scheduling algorithm.
+No options for "mcast_dist_residue" scheduling algorithm.
+No options for "mcast_random" scheduling algorithm.
+No options for "mcast_slip" algorithm:
+No options for "mcast_tatra".
+Options for mcast_wt_fanout:
+-d weight_to_fanout (demand). Default: 1
+-a weight_to_age_of_cell. Default: 1
+Options for mcast_wt_residue:
+-d weight_to_residue (demand). Default: 1
+-a weight_to_age_of_cell. Default: 1
+Options for "mucf" scheduling algorithm:
+    -n number_of_iterations. Default: 1
+NOTE: "mucf" requires the use of "defaultInputAction" with the -o option.
+Options for "neural" scheduling algorithm:
+    -t threshold. Default: 0.000001
+    -s stepsize.  Default: 0.000100
+    -a weight_A.  Default: 100.000000
+    -b weight_B.  Default: 100.000000
+    -c weight_C.  Default: 40.000000
+    -r RC_value.  Default: 1.000000
+    -g gain_bw.   Default: 0.020000
+    -f gain_noise.Default: 0.0
+    -m : Compare with Maximum matching
+No Options for "ocf" scheduling algorithm:
+No Options for "opf" scheduling algorithm:
+No Options for "opf_delay" scheduling algorithm:
+Options for "pim" scheduling algorithm:
+    -n number_of_iterations. Default: 1
+Options for "pri_fifo" scheduling algorithm:
+  -m maxCells per output buffer. Default: infinite
+No Options for "pri_lqf" scheduling algorithm:
+No options for "pri_mcast_random" scheduling algorithm.
+No Options for "pri_ocf" scheduling algorithm:
+Options for "pri_islip" scheduling algorithm:
+    -n number_of_iterations. Default: 1
+Options for "pri_fifo" scheduling algorithm:
+  -m maxCells per output buffer. Default: infinite
+No options for "pri_mcast_random" scheduling algorithm.
+No Options for "pristrict_lqf" scheduling algorithm:
+No Options for "pristrict_ocf" scheduling algorithm:
+Options for "rr" scheduling algorithm:
+    -n number_of_iterations. Default: 1
+Options for "islip" scheduling algorithm:
+    -n number_of_iterations. Default: 1
+No Options for "wwfa" scheduling algorithm:
+No Options for "wfa" scheduling algorithm:
+
+Output Actions:
+----------------------------------------
+
+Switch Fabrics:
+----------------------------------------
+Options for "crossbar" fabric:
+  -m Compare match with maximum size
+  -o numOutputLines per output. Default: 1
+No options for "outputQueued" fabric.
+
+
+Example:
+========
+
+##################################################
+sim -h 
+Date Mon Oct 21 00:55:26 1996
+Machine epic1.Stanford.EDU
+##################################################
+
+usage: sim 
+GENERAL options:
+    -h
+    -n numswitches. Default: 1
+    -i numInputs.   Default: 8
+    -o numOutputs.  Default: 8
+    -l simulationlength. Default: 100
+    -r resetStatsTime.Default: simLength/10
+    -p Indicate progress
+    -f configFilename.Default: none
+
+Traffic Models:
+    -T trafficModel.  Default: bernoulli_iid_uniform
+----------------------------------------
+Options for "trace" traffic model:
+   "tracePacket" can not be called from command line option
+
+Input Actions:
+    -I inputAction. Default: defaultInputAction
+----------------------------------------
+
+Switch scheduling algorithms:
+    -A switchAlgorithm.  Default: none
+----------------------------------------
+
+Output Actions:
+    -O outputAction.Default: defaultOutputAction
+----------------------------------------
+
+Switch Fabrics:
+    -F switchFabric.Default: crossbar
+----------------------------------------
+Options for "atom" fabric:
+  -d  dedicatedBufferSize. Default: 48
+  -s  sharedBufferSize. Default: 32
+  -r  RoundRobin amongst inputs. Default: NO
+

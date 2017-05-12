@@ -1,0 +1,826 @@
+##################################################
+../../bin/sim -l1000 -f 8x8.combo.bursty_nonuniform.multi 
+This is Sim version 2.36, Released May 11, 2017 
+
+# Date Thu May 11 17:39:14 2017
+# Machine DN525eqo.SUNet
+##################################################
+
+Number of switches: 1
+
+============================================
+================ Switch 0 =================
+============================================
+Creating switch with 8 inputs, 8 outputs and 4 priorities
+InputAction: defaultInputAction
+    Max cells per input buffer: INFINITE
+    Max cells per input FIFO: INFINITE
+OutputAction: strictPriorityOutputAction
+Fabric: crossbar
+Switch Scheduling Algorithm: pri_combo
+Infinite output buffers.
+Input: 0  Traffic model: bursty_nonuniform
+      Output: 0 utilization: 0.115000
+      Output: 1 utilization: 0.115000
+      Output: 2 utilization: 0.115000
+      Output: 3 utilization: 0.115000
+      Output: 4 utilization: 0.115000
+      Output: 5 utilization: 0.115000
+      Output: 6 utilization: 0.115000
+      Output: 7 utilization: 0.115000
+Levels of priority 4
+priority 0  unicast utilization 0.000000
+priority 1  unicast utilization 0.460000
+priority 2  unicast utilization 0.000000
+priority 3  unicast utilization 0.460000
+    Using default mean burst length
+    Burstlength 10.000000
+    Using default burst-by-burst destination switching probability
+    Burst-by-burst destination switching probability 1.000000
+    Destination changed burst by burst.
+    Generate UNICAST and MULTICAST cells.
+    Fraction of cells that are multicast 0.100000
+    Using default fanout: U[0,2^8]
+priority 0  multicast utilization 0.046000
+priority 1  multicast utilization 0.000000
+priority 2  multicast utilization 0.046000
+priority 3  multicast utilization 0.000000
+Input: 1  Traffic model: bursty_nonuniform
+      Output: 0 utilization: 0.115000
+      Output: 1 utilization: 0.115000
+      Output: 2 utilization: 0.115000
+      Output: 3 utilization: 0.115000
+      Output: 4 utilization: 0.115000
+      Output: 5 utilization: 0.115000
+      Output: 6 utilization: 0.115000
+      Output: 7 utilization: 0.115000
+Levels of priority 4
+priority 0  unicast utilization 0.000000
+priority 1  unicast utilization 0.460000
+priority 2  unicast utilization 0.000000
+priority 3  unicast utilization 0.460000
+    Using default mean burst length
+    Burstlength 10.000000
+    Using default burst-by-burst destination switching probability
+    Burst-by-burst destination switching probability 1.000000
+    Destination changed burst by burst.
+    Generate UNICAST and MULTICAST cells.
+    Fraction of cells that are multicast 0.100000
+    Using default fanout: U[0,2^8]
+priority 0  multicast utilization 0.046000
+priority 1  multicast utilization 0.000000
+priority 2  multicast utilization 0.046000
+priority 3  multicast utilization 0.000000
+Input: 2  Traffic model: bursty_nonuniform
+      Output: 0 utilization: 0.115000
+      Output: 1 utilization: 0.115000
+      Output: 2 utilization: 0.115000
+      Output: 3 utilization: 0.115000
+      Output: 4 utilization: 0.115000
+      Output: 5 utilization: 0.115000
+      Output: 6 utilization: 0.115000
+      Output: 7 utilization: 0.115000
+Levels of priority 4
+priority 0  unicast utilization 0.000000
+priority 1  unicast utilization 0.460000
+priority 2  unicast utilization 0.000000
+priority 3  unicast utilization 0.460000
+    Using default mean burst length
+    Burstlength 10.000000
+    Using default burst-by-burst destination switching probability
+    Burst-by-burst destination switching probability 1.000000
+    Destination changed burst by burst.
+    Generate UNICAST and MULTICAST cells.
+    Fraction of cells that are multicast 0.100000
+    Using default fanout: U[0,2^8]
+priority 0  multicast utilization 0.046000
+priority 1  multicast utilization 0.000000
+priority 2  multicast utilization 0.046000
+priority 3  multicast utilization 0.000000
+Input: 3  Traffic model: bursty_nonuniform
+      Output: 0 utilization: 0.115000
+      Output: 1 utilization: 0.115000
+      Output: 2 utilization: 0.115000
+      Output: 3 utilization: 0.115000
+      Output: 4 utilization: 0.115000
+      Output: 5 utilization: 0.115000
+      Output: 6 utilization: 0.115000
+      Output: 7 utilization: 0.115000
+Levels of priority 4
+priority 0  unicast utilization 0.000000
+priority 1  unicast utilization 0.460000
+priority 2  unicast utilization 0.000000
+priority 3  unicast utilization 0.460000
+    Using default mean burst length
+    Burstlength 10.000000
+    Using default burst-by-burst destination switching probability
+    Burst-by-burst destination switching probability 1.000000
+    Destination changed burst by burst.
+    Generate UNICAST and MULTICAST cells.
+    Fraction of cells that are multicast 0.100000
+    Using default fanout: U[0,2^8]
+priority 0  multicast utilization 0.046000
+priority 1  multicast utilization 0.000000
+priority 2  multicast utilization 0.046000
+priority 3  multicast utilization 0.000000
+Input: 4  Traffic model: bursty_nonuniform
+      Output: 0 utilization: 0.115000
+      Output: 1 utilization: 0.115000
+      Output: 2 utilization: 0.115000
+      Output: 3 utilization: 0.115000
+      Output: 4 utilization: 0.115000
+      Output: 5 utilization: 0.115000
+      Output: 6 utilization: 0.115000
+      Output: 7 utilization: 0.115000
+Levels of priority 4
+priority 0  unicast utilization 0.000000
+priority 1  unicast utilization 0.460000
+priority 2  unicast utilization 0.000000
+priority 3  unicast utilization 0.460000
+    Using default mean burst length
+    Burstlength 10.000000
+    Using default burst-by-burst destination switching probability
+    Burst-by-burst destination switching probability 1.000000
+    Destination changed burst by burst.
+    Generate UNICAST and MULTICAST cells.
+    Fraction of cells that are multicast 0.100000
+    Using default fanout: U[0,2^8]
+priority 0  multicast utilization 0.046000
+priority 1  multicast utilization 0.000000
+priority 2  multicast utilization 0.046000
+priority 3  multicast utilization 0.000000
+Input: 5  Traffic model: bursty_nonuniform
+      Output: 0 utilization: 0.115000
+      Output: 1 utilization: 0.115000
+      Output: 2 utilization: 0.115000
+      Output: 3 utilization: 0.115000
+      Output: 4 utilization: 0.115000
+      Output: 5 utilization: 0.115000
+      Output: 6 utilization: 0.115000
+      Output: 7 utilization: 0.115000
+Levels of priority 4
+priority 0  unicast utilization 0.000000
+priority 1  unicast utilization 0.460000
+priority 2  unicast utilization 0.000000
+priority 3  unicast utilization 0.460000
+    Using default mean burst length
+    Burstlength 10.000000
+    Using default burst-by-burst destination switching probability
+    Burst-by-burst destination switching probability 1.000000
+    Destination changed burst by burst.
+    Generate UNICAST and MULTICAST cells.
+    Fraction of cells that are multicast 0.100000
+    Using default fanout: U[0,2^8]
+priority 0  multicast utilization 0.046000
+priority 1  multicast utilization 0.000000
+priority 2  multicast utilization 0.046000
+priority 3  multicast utilization 0.000000
+Input: 6  Traffic model: bursty_nonuniform
+      Output: 0 utilization: 0.115000
+      Output: 1 utilization: 0.115000
+      Output: 2 utilization: 0.115000
+      Output: 3 utilization: 0.115000
+      Output: 4 utilization: 0.115000
+      Output: 5 utilization: 0.115000
+      Output: 6 utilization: 0.115000
+      Output: 7 utilization: 0.115000
+Levels of priority 4
+priority 0  unicast utilization 0.000000
+priority 1  unicast utilization 0.460000
+priority 2  unicast utilization 0.000000
+priority 3  unicast utilization 0.460000
+    Using default mean burst length
+    Burstlength 10.000000
+    Using default burst-by-burst destination switching probability
+    Burst-by-burst destination switching probability 1.000000
+    Destination changed burst by burst.
+    Generate UNICAST and MULTICAST cells.
+    Fraction of cells that are multicast 0.100000
+    Using default fanout: U[0,2^8]
+priority 0  multicast utilization 0.046000
+priority 1  multicast utilization 0.000000
+priority 2  multicast utilization 0.046000
+priority 3  multicast utilization 0.000000
+Input: 7  Traffic model: bursty_nonuniform
+      Output: 0 utilization: 0.123750
+      Output: 1 utilization: 0.100000
+      Output: 2 utilization: 0.123750
+      Output: 3 utilization: 0.123750
+      Output: 4 utilization: 0.123750
+      Output: 5 utilization: 0.123750
+      Output: 6 utilization: 0.123750
+      Output: 7 utilization: 0.123750
+Levels of priority 4
+priority 0  unicast utilization 0.000000
+priority 1  unicast utilization 0.483125
+priority 2  unicast utilization 0.000000
+priority 3  unicast utilization 0.483125
+    Using default mean burst length
+    Burstlength 10.000000
+    Using default burst-by-burst destination switching probability
+    Burst-by-burst destination switching probability 1.000000
+    Destination changed burst by burst.
+    Generate UNICAST and MULTICAST cells.
+    Fraction of cells that are multicast 0.100000
+    Using default fanout: U[0,2^8]
+priority 0  multicast utilization 0.048313
+priority 1  multicast utilization 0.000000
+priority 2  multicast utilization 0.048313
+priority 3  multicast utilization 0.000000
+
+Statistics Enabled for switch: 0
+---------------------------------
+    Arrival Statistics: 
+      Enabled for i/p buffer (0,0)
+    Departures Statistics: 
+    Latency Statistics: 
+      Enabled for i/p buffers (*,1)
+      Enabled for i/p buffers (*,1)
+      Enabled for i/p buffers (*,1)
+      Enabled for i/p buffers (*,1)
+      Enabled for i/p buffers (*,1)
+      Enabled for i/p buffers (*,1)
+      Enabled for i/p buffers (*,1)
+      Enabled for i/p buffers (*,1)
+    Occupancy Statistics: 
+      Enabled for i/p buffers (1,*)
+    Arrival Histogram: 
+    Departures Histogram: 
+      Enabled for all mcast i/p buffers
+    Latency Histogram: 
+    Occupancy Histogram: 
+ResetStatsTime 500
+Resetting stats for switch: 0 at time 0
+Resetting stats for switch: 0 at time 500
+
+
+
+===============================================================
+======================== RESULTS ==============================
+===============================================================
+Simulation stopped at time: 1000
+Maximum memory used: 663552 bytes
+# Simulation runtime: 0 secs
+
+====================================================
+====================== SWITCH    0 =================
+====================================================
+  Traffic Information
+  -------------------
+  I/P  model  Util
+  0  bursty_nonuniform  0.934000
+  (0,0)    0	0.000000
+  (0,0)    1	0.068000
+  (0,0)    2	0.000000
+  (0,0)    3	0.029000
+MCAST input cells:
+  (0)    0	0.027000
+  (0)    1	0.000000
+  (0)    2	0.014000
+  (0)    3	0.000000
+MCAST output cells:
+  (0)    0	0.135000
+  (0)    1	0.000000
+  (0)    2	0.070000
+  (0)    3	0.000000
+       Fanout stats:        5        0    (41)
+  1  bursty_nonuniform  0.916000
+       Fanout stats:        4        0    (43)
+  2  bursty_nonuniform  0.925000
+       Fanout stats:        6        0    (150)
+  3  bursty_nonuniform  0.924000
+       Fanout stats:        6        0    (106)
+  4  bursty_nonuniform  0.929000
+       Fanout stats:        3        0    (111)
+  5  bursty_nonuniform  0.910000
+       Fanout stats:        3        0    (137)
+  6  bursty_nonuniform  0.929000
+       Fanout stats:        5        0    (56)
+  7  bursty_nonuniform  0.966000
+       Fanout stats:        7        0    (70)
+
+
+  INPUT BUFFER ARRIVAL STATS
+  --------------------------
+  I/P O/P   Pri  Avg   SD
+  -----------------------
+    0   0   0   0.00000 0.00000 (0)
+    0   0   1   22.00000 12.98717 (45)
+    0   0   2   0.00000 0.00000 (0)
+    0   0   3   0.00000 0.00000 (0)
+
+  INPUT BUFFER DEPARTURE STATS
+  ----------------------------
+  I/P O/P   Pri  Avg   SD
+  -----------------------
+    No Stats Enabled. 
+
+  INPUT BUFFER LATENCY STATS
+  --------------------------
+  I/P O/P   Pri  Avg   SD
+  -----------------------
+    0   1   0   0.00000 0.00000 (0)
+    0   1   1   45.31746 43.65479 (63)
+    0   1   2   0.00000 0.00000 (0)
+    0   1   3   86.95455 45.74085 (22)
+    1   1   0   0.00000 0.00000 (0)
+    1   1   1   2.71429 3.28261 (7)
+    1   1   2   0.00000 0.00000 (0)
+    1   1   3   155.75758 6.68798 (33)
+    2   1   0   0.00000 0.00000 (0)
+    2   1   1   6.00000 7.44504 (7)
+    2   1   2   0.00000 0.00000 (0)
+    2   1   3   148.75000 1.63936 (4)
+    3   1   0   0.00000 0.00000 (0)
+    3   1   1   7.57143 0.49487 (14)
+    3   1   2   0.00000 0.00000 (0)
+    3   1   3   114.60000 41.12615 (25)
+    4   1   0   0.00000 0.00000 (0)
+    4   1   1   4.00000 7.74597 (19)
+    4   1   2   0.00000 0.00000 (0)
+    4   1   3   111.15385 32.82552 (13)
+    5   1   0   0.00000 0.00000 (0)
+    5   1   1   3.35000 4.72520 (20)
+    5   1   2   0.00000 0.00000 (0)
+    5   1   3   161.00000 17.61087 (14)
+    6   1   0   0.00000 0.00000 (0)
+    6   1   1   4.16667 9.31695 (6)
+    6   1   2   0.00000 0.00000 (0)
+    6   1   3   77.15000 66.93973 (20)
+    7   1   0   0.00000 0.00000 (0)
+    7   1   1   0.77778 1.35628 (18)
+    7   1   2   0.00000 0.00000 (0)
+    7   1   3   89.65217 52.48156 (23)
+
+  INPUT BUFFER TIME AVG OCCUPANCY STATS
+  -------------------------------------
+  I/P O/P   Pri  Avg   SD
+  -----------------------
+    1   0   0   0.00000 0.00000 (499)
+    1   0   1   4.11022 8.35161 (499)
+    1   0   2   0.00000 0.00000 (499)
+    1   0   3   6.10220 6.87620 (499)
+    1   1   0   0.00000 0.00000 (499)
+    1   1   1   0.03808 0.23805 (499)
+    1   1   2   0.00000 0.00000 (499)
+    1   1   3   5.54709 7.79004 (499)
+    1   2   0   0.00000 0.00000 (499)
+    1   2   1   0.10421 0.48748 (499)
+    1   2   2   0.00000 0.00000 (499)
+    1   2   3   12.00601 6.93702 (499)
+    1   3   0   0.00000 0.00000 (499)
+    1   3   1   3.62325 8.44351 (499)
+    1   3   2   0.00000 0.00000 (499)
+    1   3   3   23.80160 9.78746 (499)
+    1   4   0   0.00000 0.00000 (499)
+    1   4   1   1.36673 3.89951 (499)
+    1   4   2   0.00000 0.00000 (499)
+    1   4   3   12.27054 5.66119 (499)
+    1   5   0   0.00000 0.00000 (499)
+    1   5   1   0.92585 2.21864 (499)
+    1   5   2   0.00000 0.00000 (499)
+    1   5   3   14.77154 12.95390 (499)
+    1   6   0   0.00000 0.00000 (499)
+    1   6   1   0.65932 2.16554 (499)
+    1   6   2   0.00000 0.00000 (499)
+    1   6   3   7.94188 4.82257 (499)
+    1   7   0   0.00000 0.00000 (499)
+    1   7   1   0.15631 0.53309 (499)
+    1   7   2   0.00000 0.00000 (499)
+    1   7   3   15.57315 5.06235 (499)
+    1   X 109.006 12.870 (500)
+
+
+  INPUT BUFFER ARRIVAL HISTOGRAMS
+  --------------------------
+    No Histograms Enabled. 
+
+  INPUT BUFFER DEPARTURE HISTOGRAMS
+  ----------------------------
+
+----------------------------------------------------------
+Histogram of "Occupancy seen by Departures" for list: Input 0 mcast buffer, pri=0
+----------------------------------------------------------
+As seen by DEPARTURES:
+Histogram: Occupancy seen by Departures
+  Bin               #    %Total  %Cumulative
+--------------------------------------------
+Total number counted: 0
+================================================
+
+----------------------------------------------------------
+Histogram of "Occupancy seen by Departures" for list: Input 0 mcast buffer, pri=1
+----------------------------------------------------------
+As seen by DEPARTURES:
+Histogram: Occupancy seen by Departures
+  Bin               #    %Total  %Cumulative
+--------------------------------------------
+Total number counted: 0
+================================================
+
+----------------------------------------------------------
+Histogram of "Occupancy seen by Departures" for list: Input 0 mcast buffer, pri=2
+----------------------------------------------------------
+As seen by DEPARTURES:
+Histogram: Occupancy seen by Departures
+  Bin               #    %Total  %Cumulative
+--------------------------------------------
+8                   1 100.0000 100.0000
+Total number counted: 1
+================================================
+
+----------------------------------------------------------
+Histogram of "Occupancy seen by Departures" for list: Input 0 mcast buffer, pri=3
+----------------------------------------------------------
+As seen by DEPARTURES:
+Histogram: Occupancy seen by Departures
+  Bin               #    %Total  %Cumulative
+--------------------------------------------
+Total number counted: 0
+================================================
+
+----------------------------------------------------------
+Histogram of "Occupancy seen by Departures" for list: Input 1 mcast buffer, pri=0
+----------------------------------------------------------
+As seen by DEPARTURES:
+Histogram: Occupancy seen by Departures
+  Bin               #    %Total  %Cumulative
+--------------------------------------------
+Total number counted: 0
+================================================
+
+----------------------------------------------------------
+Histogram of "Occupancy seen by Departures" for list: Input 1 mcast buffer, pri=1
+----------------------------------------------------------
+As seen by DEPARTURES:
+Histogram: Occupancy seen by Departures
+  Bin               #    %Total  %Cumulative
+--------------------------------------------
+Total number counted: 0
+================================================
+
+----------------------------------------------------------
+Histogram of "Occupancy seen by Departures" for list: Input 1 mcast buffer, pri=2
+----------------------------------------------------------
+As seen by DEPARTURES:
+Histogram: Occupancy seen by Departures
+  Bin               #    %Total  %Cumulative
+--------------------------------------------
+16                  1 100.0000 100.0000
+Total number counted: 1
+================================================
+
+----------------------------------------------------------
+Histogram of "Occupancy seen by Departures" for list: Input 1 mcast buffer, pri=3
+----------------------------------------------------------
+As seen by DEPARTURES:
+Histogram: Occupancy seen by Departures
+  Bin               #    %Total  %Cumulative
+--------------------------------------------
+Total number counted: 0
+================================================
+
+----------------------------------------------------------
+Histogram of "Occupancy seen by Departures" for list: Input 2 mcast buffer, pri=0
+----------------------------------------------------------
+As seen by DEPARTURES:
+Histogram: Occupancy seen by Departures
+  Bin               #    %Total  %Cumulative
+--------------------------------------------
+64                  2 100.0000 100.0000
+Total number counted: 2
+================================================
+
+----------------------------------------------------------
+Histogram of "Occupancy seen by Departures" for list: Input 2 mcast buffer, pri=1
+----------------------------------------------------------
+As seen by DEPARTURES:
+Histogram: Occupancy seen by Departures
+  Bin               #    %Total  %Cumulative
+--------------------------------------------
+Total number counted: 0
+================================================
+
+----------------------------------------------------------
+Histogram of "Occupancy seen by Departures" for list: Input 2 mcast buffer, pri=2
+----------------------------------------------------------
+As seen by DEPARTURES:
+Histogram: Occupancy seen by Departures
+  Bin               #    %Total  %Cumulative
+--------------------------------------------
+32                  2 100.0000 100.0000
+Total number counted: 2
+================================================
+
+----------------------------------------------------------
+Histogram of "Occupancy seen by Departures" for list: Input 2 mcast buffer, pri=3
+----------------------------------------------------------
+As seen by DEPARTURES:
+Histogram: Occupancy seen by Departures
+  Bin               #    %Total  %Cumulative
+--------------------------------------------
+Total number counted: 0
+================================================
+
+----------------------------------------------------------
+Histogram of "Occupancy seen by Departures" for list: Input 3 mcast buffer, pri=0
+----------------------------------------------------------
+As seen by DEPARTURES:
+Histogram: Occupancy seen by Departures
+  Bin               #    %Total  %Cumulative
+--------------------------------------------
+16                  3 100.0000 100.0000
+Total number counted: 3
+================================================
+
+----------------------------------------------------------
+Histogram of "Occupancy seen by Departures" for list: Input 3 mcast buffer, pri=1
+----------------------------------------------------------
+As seen by DEPARTURES:
+Histogram: Occupancy seen by Departures
+  Bin               #    %Total  %Cumulative
+--------------------------------------------
+Total number counted: 0
+================================================
+
+----------------------------------------------------------
+Histogram of "Occupancy seen by Departures" for list: Input 3 mcast buffer, pri=2
+----------------------------------------------------------
+As seen by DEPARTURES:
+Histogram: Occupancy seen by Departures
+  Bin               #    %Total  %Cumulative
+--------------------------------------------
+32                  2 100.0000 100.0000
+Total number counted: 2
+================================================
+
+----------------------------------------------------------
+Histogram of "Occupancy seen by Departures" for list: Input 3 mcast buffer, pri=3
+----------------------------------------------------------
+As seen by DEPARTURES:
+Histogram: Occupancy seen by Departures
+  Bin               #    %Total  %Cumulative
+--------------------------------------------
+Total number counted: 0
+================================================
+
+----------------------------------------------------------
+Histogram of "Occupancy seen by Departures" for list: Input 4 mcast buffer, pri=0
+----------------------------------------------------------
+As seen by DEPARTURES:
+Histogram: Occupancy seen by Departures
+  Bin               #    %Total  %Cumulative
+--------------------------------------------
+16                  3 100.0000 100.0000
+Total number counted: 3
+================================================
+
+----------------------------------------------------------
+Histogram of "Occupancy seen by Departures" for list: Input 4 mcast buffer, pri=1
+----------------------------------------------------------
+As seen by DEPARTURES:
+Histogram: Occupancy seen by Departures
+  Bin               #    %Total  %Cumulative
+--------------------------------------------
+Total number counted: 0
+================================================
+
+----------------------------------------------------------
+Histogram of "Occupancy seen by Departures" for list: Input 4 mcast buffer, pri=2
+----------------------------------------------------------
+As seen by DEPARTURES:
+Histogram: Occupancy seen by Departures
+  Bin               #    %Total  %Cumulative
+--------------------------------------------
+64                  2 100.0000 100.0000
+Total number counted: 2
+================================================
+
+----------------------------------------------------------
+Histogram of "Occupancy seen by Departures" for list: Input 4 mcast buffer, pri=3
+----------------------------------------------------------
+As seen by DEPARTURES:
+Histogram: Occupancy seen by Departures
+  Bin               #    %Total  %Cumulative
+--------------------------------------------
+Total number counted: 0
+================================================
+
+----------------------------------------------------------
+Histogram of "Occupancy seen by Departures" for list: Input 5 mcast buffer, pri=0
+----------------------------------------------------------
+As seen by DEPARTURES:
+Histogram: Occupancy seen by Departures
+  Bin               #    %Total  %Cumulative
+--------------------------------------------
+64                  7 100.0000 100.0000
+Total number counted: 7
+================================================
+
+----------------------------------------------------------
+Histogram of "Occupancy seen by Departures" for list: Input 5 mcast buffer, pri=1
+----------------------------------------------------------
+As seen by DEPARTURES:
+Histogram: Occupancy seen by Departures
+  Bin               #    %Total  %Cumulative
+--------------------------------------------
+Total number counted: 0
+================================================
+
+----------------------------------------------------------
+Histogram of "Occupancy seen by Departures" for list: Input 5 mcast buffer, pri=2
+----------------------------------------------------------
+As seen by DEPARTURES:
+Histogram: Occupancy seen by Departures
+  Bin               #    %Total  %Cumulative
+--------------------------------------------
+16                  7 100.0000 100.0000
+Total number counted: 7
+================================================
+
+----------------------------------------------------------
+Histogram of "Occupancy seen by Departures" for list: Input 5 mcast buffer, pri=3
+----------------------------------------------------------
+As seen by DEPARTURES:
+Histogram: Occupancy seen by Departures
+  Bin               #    %Total  %Cumulative
+--------------------------------------------
+Total number counted: 0
+================================================
+
+----------------------------------------------------------
+Histogram of "Occupancy seen by Departures" for list: Input 6 mcast buffer, pri=0
+----------------------------------------------------------
+As seen by DEPARTURES:
+Histogram: Occupancy seen by Departures
+  Bin               #    %Total  %Cumulative
+--------------------------------------------
+32                  2 100.0000 100.0000
+Total number counted: 2
+================================================
+
+----------------------------------------------------------
+Histogram of "Occupancy seen by Departures" for list: Input 6 mcast buffer, pri=1
+----------------------------------------------------------
+As seen by DEPARTURES:
+Histogram: Occupancy seen by Departures
+  Bin               #    %Total  %Cumulative
+--------------------------------------------
+Total number counted: 0
+================================================
+
+----------------------------------------------------------
+Histogram of "Occupancy seen by Departures" for list: Input 6 mcast buffer, pri=2
+----------------------------------------------------------
+As seen by DEPARTURES:
+Histogram: Occupancy seen by Departures
+  Bin               #    %Total  %Cumulative
+--------------------------------------------
+4                   1  50.0000  50.0000
+8                   1  50.0000 100.0000
+Total number counted: 2
+================================================
+
+----------------------------------------------------------
+Histogram of "Occupancy seen by Departures" for list: Input 6 mcast buffer, pri=3
+----------------------------------------------------------
+As seen by DEPARTURES:
+Histogram: Occupancy seen by Departures
+  Bin               #    %Total  %Cumulative
+--------------------------------------------
+Total number counted: 0
+================================================
+
+----------------------------------------------------------
+Histogram of "Occupancy seen by Departures" for list: Input 7 mcast buffer, pri=0
+----------------------------------------------------------
+As seen by DEPARTURES:
+Histogram: Occupancy seen by Departures
+  Bin               #    %Total  %Cumulative
+--------------------------------------------
+16                  1 100.0000 100.0000
+Total number counted: 1
+================================================
+
+----------------------------------------------------------
+Histogram of "Occupancy seen by Departures" for list: Input 7 mcast buffer, pri=1
+----------------------------------------------------------
+As seen by DEPARTURES:
+Histogram: Occupancy seen by Departures
+  Bin               #    %Total  %Cumulative
+--------------------------------------------
+Total number counted: 0
+================================================
+
+----------------------------------------------------------
+Histogram of "Occupancy seen by Departures" for list: Input 7 mcast buffer, pri=2
+----------------------------------------------------------
+As seen by DEPARTURES:
+Histogram: Occupancy seen by Departures
+  Bin               #    %Total  %Cumulative
+--------------------------------------------
+32                  1 100.0000 100.0000
+Total number counted: 1
+================================================
+
+----------------------------------------------------------
+Histogram of "Occupancy seen by Departures" for list: Input 7 mcast buffer, pri=3
+----------------------------------------------------------
+As seen by DEPARTURES:
+Histogram: Occupancy seen by Departures
+  Bin               #    %Total  %Cumulative
+--------------------------------------------
+Total number counted: 0
+================================================
+
+  INPUT BUFFER LATENCY HISTOGRAMS
+  --------------------------
+    No Histograms Enabled. 
+
+  INPUT BUFFER TIME AVG OCCUPANCY HISTOGRAMS
+  -------------------------------------
+    No Histograms Enabled. 
+
+  OUTPUT BUFFER ARRIVAL STATS
+  ---------------------------
+  O/P   Avg   SD
+  --------------
+    No Stats Enabled. 
+
+  OUTPUT BUFFER DEPARTURE STATS
+  -----------------------------
+  O/P   Avg   SD
+  --------------
+    No Stats Enabled. 
+
+  OUTPUT BUFFER LATENCY STATS
+  ---------------------------
+  O/P   Avg   SD
+  --------------
+    No Stats Enabled. 
+
+  OUTPUT BUFFER TIME AVG OCCUPANCY STATS
+  --------------------------------------
+  O/P   Avg   SD
+  --------------
+    No Stats Enabled. 
+
+  Latency statistics
+  ------------------
+                       Avg       SD     Number
+                     -------------------------
+     Input Latency:  112.43946 148.20312    (3213)
+    Fabric Latency:         0        0    (3213)
+    Output Latency:         0        0    (3213)
+    Switch Latency:  112.43946 148.20312    (3213)
+
+UNICAST:
+    Input latency per priority:---->
+     0                            0        0    (0)
+     1                     25.870617 32.336561    (1654)
+     2                            0        0    (0)
+     3                     158.02876 81.144105    (1391)
+MULTICAST:
+    Input latency per priority:---->
+     0                     615.04494 222.08971    (89)
+     1                            0        0    (0)
+     2                     555.96203 158.45524    (79)
+     3                            0        0    (0)
+               Avg:  112.43946 148.20312    (3213)
+
+UNICAST:
+    Output latency per priority:---->
+     0                            0        0    (0)
+     1                            0        0    (1654)
+     2                            0        0    (0)
+     3                            0        0    (1391)
+MULTICAST:
+    Output latency per priority:---->
+     0                            0        0    (89)
+     1                            0        0    (0)
+     2                            0        0    (79)
+     3                            0        0    (0)
+               Avg:         0        0    (3213)
+
+
+  Crossbar statistics
+  -------------------
+                       Avg       SD     Number
+                     -------------------------
+Match Size:             6.426 0.91242753    (500)
+
+  OUTPUT BURSTINESS
+  -----------------
+   O/P  Avg   SD   
+  -----------------
+    0    1.003   0.052
+    1    1.000   0.000
+    2    1.003   0.056
+    3    1.002   0.048
+    4    1.005   0.069
+    5    1.004   0.067
+    6    1.003   0.050
+    7    1.004   0.065
+-----------------------------
+Total Latency over all cells:  112.43946 148.20312    (3213)
+-----------------------------

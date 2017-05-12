@@ -1,0 +1,334 @@
+##################################################
+../../bin/sim -l1000 -f 8x128.fifo 
+This is Sim version 2.36, Released May 11, 2017 
+
+# Date Thu May 11 17:39:14 2017
+# Machine DN525eqo.SUNet
+##################################################
+
+Number of switches: 1
+
+============================================
+================ Switch 0 =================
+============================================
+Creating switch with 8 inputs, 128 outputs and 1 priorities
+InputAction: defaultInputAction
+    Max cells per input buffer: INFINITE
+    Max cells per input FIFO: INFINITE
+OutputAction: defaultOutputAction
+Fabric: crossbar
+Switch Scheduling Algorithm: fifo
+Infinite output buffers.
+Input: 0  Traffic model: bernoulli_iid_uniform
+  Using default priority levels
+  Using default priority levels
+    Levels of priority 1
+priority 0  utilization 0.880000
+Input: 1  Traffic model: bernoulli_iid_uniform
+  Using default priority levels
+  Using default priority levels
+    Levels of priority 1
+priority 0  utilization 0.880000
+Input: 2  Traffic model: bernoulli_iid_uniform
+  Using default priority levels
+  Using default priority levels
+    Levels of priority 1
+priority 0  utilization 0.880000
+Input: 3  Traffic model: bernoulli_iid_uniform
+  Using default priority levels
+  Using default priority levels
+    Levels of priority 1
+priority 0  utilization 0.880000
+Input: 4  Traffic model: bernoulli_iid_uniform
+  Using default priority levels
+  Using default priority levels
+    Levels of priority 1
+priority 0  utilization 0.880000
+Input: 5  Traffic model: bernoulli_iid_uniform
+  Using default priority levels
+  Using default priority levels
+    Levels of priority 1
+priority 0  utilization 0.880000
+Input: 6  Traffic model: bernoulli_iid_uniform
+  Using default priority levels
+  Using default priority levels
+    Levels of priority 1
+priority 0  utilization 0.880000
+Input: 7  Traffic model: bernoulli_iid_uniform
+  Using default priority levels
+  Using default priority levels
+    Levels of priority 1
+priority 0  utilization 0.880000
+
+Statistics Enabled for switch: 0
+---------------------------------
+    Arrival Statistics: 
+    Departures Statistics: 
+    Latency Statistics: 
+      Enabled for i/p buffers (*,0)
+      Enabled for i/p buffers (*,0)
+      Enabled for i/p buffers (*,0)
+      Enabled for i/p buffers (*,0)
+      Enabled for i/p buffers (*,0)
+      Enabled for i/p buffers (*,0)
+      Enabled for i/p buffers (*,0)
+      Enabled for i/p buffers (*,0)
+    Occupancy Statistics: 
+    Arrival Histogram: 
+    Departures Histogram: 
+    Latency Histogram: 
+    Occupancy Histogram: 
+ResetStatsTime 500
+Resetting stats for switch: 0 at time 0
+Resetting stats for switch: 0 at time 500
+
+
+
+===============================================================
+======================== RESULTS ==============================
+===============================================================
+Simulation stopped at time: 1000
+Maximum memory used: 565248 bytes
+# Simulation runtime: 0 secs
+
+====================================================
+====================== SWITCH    0 =================
+====================================================
+  Traffic Information
+  -------------------
+  I/P  model  Util
+  0  bernoulli_iid_uniform  IN: 0.881000 OUT: 0.881000
+  (0,0)    0	0.008000
+  1  bernoulli_iid_uniform  IN: 0.881000 OUT: 0.881000
+  2  bernoulli_iid_uniform  IN: 0.882000 OUT: 0.882000
+  3  bernoulli_iid_uniform  IN: 0.887000 OUT: 0.887000
+  4  bernoulli_iid_uniform  IN: 0.886000 OUT: 0.886000
+  5  bernoulli_iid_uniform  IN: 0.867000 OUT: 0.867000
+  6  bernoulli_iid_uniform  IN: 0.859000 OUT: 0.859000
+  7  bernoulli_iid_uniform  IN: 0.874000 OUT: 0.874000
+
+
+  INPUT BUFFER ARRIVAL STATS
+  --------------------------
+  I/P O/P   Pri  Avg   SD
+  -----------------------
+    No Stats Enabled. 
+
+  INPUT BUFFER DEPARTURE STATS
+  ----------------------------
+  I/P O/P   Pri  Avg   SD
+  -----------------------
+    No Stats Enabled. 
+
+  INPUT BUFFER LATENCY STATS
+  --------------------------
+  I/P O/P   Pri  Avg   SD
+  -----------------------
+    0   0   0   0.50000 0.50000 (4)
+    1   0   0   0.20000 0.40000 (5)
+    2   0   0   0.50000 0.50000 (2)
+    3   0   0   0.00000 0.00000 (2)
+    4   0   0   0.00000 0.00000 (2)
+    5   0   0   0.50000 0.50000 (2)
+    6   0   0   0.33333 0.47140 (3)
+    7   0   0   0.00000 0.00000 (1)
+
+  INPUT BUFFER TIME AVG OCCUPANCY STATS
+  -------------------------------------
+  I/P O/P   Pri  Avg   SD
+  -----------------------
+    No Stats Enabled. 
+
+
+  INPUT BUFFER ARRIVAL HISTOGRAMS
+  --------------------------
+    No Histograms Enabled. 
+
+  INPUT BUFFER DEPARTURE HISTOGRAMS
+  ----------------------------
+    No Histograms Enabled. 
+
+  INPUT BUFFER LATENCY HISTOGRAMS
+  --------------------------
+    No Histograms Enabled. 
+
+  INPUT BUFFER TIME AVG OCCUPANCY HISTOGRAMS
+  -------------------------------------
+    No Histograms Enabled. 
+
+  OUTPUT BUFFER ARRIVAL STATS
+  ---------------------------
+  O/P   Avg   SD
+  --------------
+    No Stats Enabled. 
+
+  OUTPUT BUFFER DEPARTURE STATS
+  -----------------------------
+  O/P   Avg   SD
+  --------------
+    No Stats Enabled. 
+
+  OUTPUT BUFFER LATENCY STATS
+  ---------------------------
+  O/P   Avg   SD
+  --------------
+    No Stats Enabled. 
+
+  OUTPUT BUFFER TIME AVG OCCUPANCY STATS
+  --------------------------------------
+  O/P   Avg   SD
+  --------------
+    No Stats Enabled. 
+
+  Latency statistics
+  ------------------
+                       Avg       SD     Number
+                     -------------------------
+     Input Latency:  0.22003985 0.46417614    (3513)
+    Fabric Latency:         0        0    (3513)
+    Output Latency:         0        0    (3513)
+    Switch Latency:  0.22003985 0.46417614    (3513)
+
+
+
+  Crossbar statistics
+  -------------------
+                       Avg       SD     Number
+                     -------------------------
+Match Size:             7.026 0.92375538    (500)
+
+  OUTPUT BURSTINESS
+  -----------------
+   O/P  Avg   SD   
+  -----------------
+    0    1.000   0.000
+    1    1.000   0.000
+    2    1.000   0.000
+    3    1.000   0.000
+    4    1.000   0.000
+    5    1.030   0.171
+    6    1.000   0.000
+    7    1.042   0.200
+    8    1.000   0.000
+    9    1.000   0.000
+   10    1.000   0.000
+   11    1.000   0.000
+   12    1.045   0.208
+   13    1.029   0.169
+   14    1.034   0.182
+   15    1.000   0.000
+   16    1.000   0.000
+   17    1.000   0.000
+   18    1.000   0.000
+   19    1.000   0.000
+   20    1.000   0.000
+   21    1.000   0.000
+   22    1.000   0.000
+   23    1.000   0.000
+   24    1.000   0.000
+   25    1.000   0.000
+   26    1.000   0.000
+   27    1.000   0.000
+   28    1.000   0.000
+   29    1.000   0.000
+   30    1.000   0.000
+   31    1.000   0.000
+   32    1.028   0.164
+   33    1.000   0.000
+   34    1.000   0.000
+   35    1.000   0.000
+   36    1.000   0.000
+   37    1.000   0.000
+   38    1.036   0.186
+   39    1.048   0.213
+   40    1.000   0.000
+   41    1.000   0.000
+   42    1.000   0.000
+   43    1.048   0.213
+   44    1.000   0.000
+   45    1.000   0.000
+   46    1.000   0.000
+   47    1.038   0.192
+   48    1.000   0.000
+   49    1.033   0.180
+   50    1.000   0.000
+   51    1.000   0.000
+   52    1.000   0.000
+   53    1.000   0.000
+   54    1.000   0.000
+   55    1.000   0.000
+   56    1.000   0.000
+   57    1.000   0.000
+   58    1.000   0.000
+   59    1.000   0.000
+   60    1.000   0.000
+   61    1.043   0.204
+   62    1.000   0.000
+   63    1.000   0.000
+   64    1.000   0.000
+   65    1.029   0.167
+   66    1.000   0.000
+   67    1.032   0.177
+   68    1.000   0.000
+   69    1.000   0.000
+   70    1.000   0.000
+   71    1.000   0.000
+   72    1.000   0.000
+   73    1.040   0.196
+   74    1.000   0.000
+   75    1.000   0.000
+   76    1.000   0.000
+   77    1.000   0.000
+   78    1.000   0.000
+   79    1.000   0.000
+   80    1.000   0.000
+   81    1.000   0.000
+   82    1.000   0.000
+   83    1.000   0.000
+   84    1.000   0.000
+   85    1.045   0.208
+   86    1.034   0.182
+   87    1.000   0.000
+   88    1.000   0.000
+   89    1.000   0.000
+   90    1.000   0.000
+   91    1.000   0.000
+   92    1.000   0.000
+   93    1.000   0.000
+   94    1.000   0.000
+   95    1.000   0.000
+   96    1.000   0.000
+   97    1.031   0.174
+   98    1.071   0.258
+   99    1.000   0.000
+  100    1.000   0.000
+  101    1.000   0.000
+  102    1.000   0.000
+  103    1.040   0.196
+  104    1.000   0.000
+  105    1.071   0.258
+  106    1.000   0.000
+  107    1.000   0.000
+  108    1.000   0.000
+  109    1.000   0.000
+  110    1.000   0.000
+  111    1.000   0.000
+  112    1.000   0.000
+  113    1.000   0.000
+  114    1.000   0.000
+  115    1.042   0.200
+  116    1.040   0.196
+  117    1.000   0.000
+  118    1.000   0.000
+  119    1.034   0.182
+  120    1.000   0.000
+  121    1.000   0.000
+  122    1.050   0.218
+  123    1.000   0.000
+  124    1.026   0.158
+  125    1.038   0.192
+  126    1.000   0.000
+  127    1.000   0.000
+-----------------------------
+Total Latency over all cells:  0.22003985 0.46417614    (3513)
+-----------------------------

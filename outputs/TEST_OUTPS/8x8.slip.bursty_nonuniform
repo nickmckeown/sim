@@ -1,0 +1,405 @@
+##################################################
+../../bin/sim -l1000 -f 8x8.slip.bursty_nonuniform 
+This is Sim version 2.36, Released May 11, 2017 
+
+# Date Thu May 11 17:39:14 2017
+# Machine DN525eqo.SUNet
+##################################################
+
+Number of switches: 1
+
+============================================
+================ Switch 0 =================
+============================================
+Creating switch with 8 inputs, 8 outputs and 1 priorities
+InputAction: defaultInputAction
+    Max cells per input buffer: INFINITE
+    Max cells per input FIFO: INFINITE
+OutputAction: defaultOutputAction
+Fabric: crossbar
+Switch Scheduling Algorithm: islip
+numIterations 2
+Input: 0  Traffic model: bursty_nonuniform
+      Output: 0 utilization: 0.115000
+      Output: 1 utilization: 0.115000
+      Output: 2 utilization: 0.115000
+      Output: 3 utilization: 0.115000
+      Output: 4 utilization: 0.115000
+      Output: 5 utilization: 0.115000
+      Output: 6 utilization: 0.115000
+      Output: 7 utilization: 0.115000
+ Using default priority levels 
+Levels of priority 1
+priority 0   utilization 0.920000
+    Using default mean burst length
+    Burstlength 10.000000
+    Using default burst-by-burst destination switching probability
+    Burst-by-burst destination switching probability 1.000000
+    Destination changed burst by burst.
+Input: 1  Traffic model: bursty_nonuniform
+      Output: 0 utilization: 0.115000
+      Output: 1 utilization: 0.115000
+      Output: 2 utilization: 0.115000
+      Output: 3 utilization: 0.115000
+      Output: 4 utilization: 0.115000
+      Output: 5 utilization: 0.115000
+      Output: 6 utilization: 0.115000
+      Output: 7 utilization: 0.115000
+ Using default priority levels 
+Levels of priority 1
+priority 0   utilization 0.920000
+    Using default mean burst length
+    Burstlength 10.000000
+    Using default burst-by-burst destination switching probability
+    Burst-by-burst destination switching probability 1.000000
+    Destination changed burst by burst.
+Input: 2  Traffic model: bursty_nonuniform
+      Output: 0 utilization: 0.115000
+      Output: 1 utilization: 0.115000
+      Output: 2 utilization: 0.115000
+      Output: 3 utilization: 0.115000
+      Output: 4 utilization: 0.115000
+      Output: 5 utilization: 0.115000
+      Output: 6 utilization: 0.115000
+      Output: 7 utilization: 0.115000
+ Using default priority levels 
+Levels of priority 1
+priority 0   utilization 0.920000
+    Using default mean burst length
+    Burstlength 10.000000
+    Using default burst-by-burst destination switching probability
+    Burst-by-burst destination switching probability 1.000000
+    Destination changed burst by burst.
+Input: 3  Traffic model: bursty_nonuniform
+      Output: 0 utilization: 0.115000
+      Output: 1 utilization: 0.115000
+      Output: 2 utilization: 0.115000
+      Output: 3 utilization: 0.115000
+      Output: 4 utilization: 0.115000
+      Output: 5 utilization: 0.115000
+      Output: 6 utilization: 0.115000
+      Output: 7 utilization: 0.115000
+ Using default priority levels 
+Levels of priority 1
+priority 0   utilization 0.920000
+    Using default mean burst length
+    Burstlength 10.000000
+    Using default burst-by-burst destination switching probability
+    Burst-by-burst destination switching probability 1.000000
+    Destination changed burst by burst.
+Input: 4  Traffic model: bursty_nonuniform
+      Output: 0 utilization: 0.115000
+      Output: 1 utilization: 0.115000
+      Output: 2 utilization: 0.115000
+      Output: 3 utilization: 0.115000
+      Output: 4 utilization: 0.115000
+      Output: 5 utilization: 0.115000
+      Output: 6 utilization: 0.115000
+      Output: 7 utilization: 0.115000
+ Using default priority levels 
+Levels of priority 1
+priority 0   utilization 0.920000
+    Using default mean burst length
+    Burstlength 10.000000
+    Using default burst-by-burst destination switching probability
+    Burst-by-burst destination switching probability 1.000000
+    Destination changed burst by burst.
+Input: 5  Traffic model: bursty_nonuniform
+      Output: 0 utilization: 0.115000
+      Output: 1 utilization: 0.115000
+      Output: 2 utilization: 0.115000
+      Output: 3 utilization: 0.115000
+      Output: 4 utilization: 0.115000
+      Output: 5 utilization: 0.115000
+      Output: 6 utilization: 0.115000
+      Output: 7 utilization: 0.115000
+ Using default priority levels 
+Levels of priority 1
+priority 0   utilization 0.920000
+    Using default mean burst length
+    Burstlength 10.000000
+    Using default burst-by-burst destination switching probability
+    Burst-by-burst destination switching probability 1.000000
+    Destination changed burst by burst.
+Input: 6  Traffic model: bursty_nonuniform
+      Output: 0 utilization: 0.115000
+      Output: 1 utilization: 0.115000
+      Output: 2 utilization: 0.115000
+      Output: 3 utilization: 0.115000
+      Output: 4 utilization: 0.115000
+      Output: 5 utilization: 0.115000
+      Output: 6 utilization: 0.115000
+      Output: 7 utilization: 0.115000
+ Using default priority levels 
+Levels of priority 1
+priority 0   utilization 0.920000
+    Using default mean burst length
+    Burstlength 10.000000
+    Using default burst-by-burst destination switching probability
+    Burst-by-burst destination switching probability 1.000000
+    Destination changed burst by burst.
+Input: 7  Traffic model: bursty_nonuniform
+      Output: 0 utilization: 0.123750
+      Output: 1 utilization: 0.100000
+      Output: 2 utilization: 0.123750
+      Output: 3 utilization: 0.123750
+      Output: 4 utilization: 0.123750
+      Output: 5 utilization: 0.123750
+      Output: 6 utilization: 0.123750
+      Output: 7 utilization: 0.123750
+ Using default priority levels 
+Levels of priority 1
+priority 0   utilization 0.966250
+    Using default mean burst length
+    Burstlength 10.000000
+    Using default burst-by-burst destination switching probability
+    Burst-by-burst destination switching probability 1.000000
+    Destination changed burst by burst.
+
+Statistics Enabled for switch: 0
+---------------------------------
+    Arrival Statistics: 
+      Enabled for i/p buffer (0,0)
+    Departures Statistics: 
+    Latency Statistics: 
+      Enabled for i/p buffers (*,1)
+      Enabled for i/p buffers (*,1)
+      Enabled for i/p buffers (*,1)
+      Enabled for i/p buffers (*,1)
+      Enabled for i/p buffers (*,1)
+      Enabled for i/p buffers (*,1)
+      Enabled for i/p buffers (*,1)
+      Enabled for i/p buffers (*,1)
+    Occupancy Statistics: 
+      Enabled for i/p buffers (1,*)
+    Arrival Histogram: 
+    Departures Histogram: 
+      Enabled for all mcast i/p buffers
+    Latency Histogram: 
+    Occupancy Histogram: 
+ResetStatsTime 500
+Resetting stats for switch: 0 at time 0
+Resetting stats for switch: 0 at time 500
+
+
+
+===============================================================
+======================== RESULTS ==============================
+===============================================================
+Simulation stopped at time: 1000
+Maximum memory used: 491520 bytes
+# Simulation runtime: 0 secs
+
+====================================================
+====================== SWITCH    0 =================
+====================================================
+  Traffic Information
+  -------------------
+  I/P  model  Util
+  0  bursty_nonuniform  0.934000
+  (0,0)    0	0.065000
+  1  bursty_nonuniform  0.916000
+  2  bursty_nonuniform  0.925000
+  3  bursty_nonuniform  0.924000
+  4  bursty_nonuniform  0.929000
+  5  bursty_nonuniform  0.910000
+  6  bursty_nonuniform  0.929000
+  7  bursty_nonuniform  0.966000
+
+
+  INPUT BUFFER ARRIVAL STATS
+  --------------------------
+  I/P O/P   Pri  Avg   SD
+  -----------------------
+    0   0   0   4.76923 2.91294 (13)
+
+  INPUT BUFFER DEPARTURE STATS
+  ----------------------------
+  I/P O/P   Pri  Avg   SD
+  -----------------------
+    No Stats Enabled. 
+
+  INPUT BUFFER LATENCY STATS
+  --------------------------
+  I/P O/P   Pri  Avg   SD
+  -----------------------
+    0   1   0   177.53846 60.15206 (91)
+    1   1   0   14.76923 18.25947 (13)
+    2   1   0   35.20690 21.02278 (29)
+    3   1   0   66.89362 43.49088 (47)
+    4   1   0   48.57971 28.65305 (69)
+    5   1   0   54.37879 48.88538 (66)
+    6   1   0   192.57831 48.61705 (83)
+    7   1   0   71.54386 35.46586 (57)
+
+  INPUT BUFFER TIME AVG OCCUPANCY STATS
+  -------------------------------------
+  I/P O/P   Pri  Avg   SD
+  -----------------------
+    1   0   0   2.84168 5.83138 (499)
+    1   1   0   0.28457 0.79778 (499)
+    1   2   0   2.75551 4.27280 (499)
+    1   3   0   5.75150 7.84918 (499)
+    1   4   0   33.69339 7.10726 (499)
+    1   5   0   26.62926 14.23763 (499)
+    1   6   0   2.50301 3.74400 (499)
+    1   7   0   3.90180 4.87729 (499)
+    1   X 78.408 12.621 (500)
+
+
+  INPUT BUFFER ARRIVAL HISTOGRAMS
+  --------------------------
+    No Histograms Enabled. 
+
+  INPUT BUFFER DEPARTURE HISTOGRAMS
+  ----------------------------
+
+----------------------------------------------------------
+Histogram of "Occupancy seen by Departures" for list: Input 0 mcast buffer, pri=0
+----------------------------------------------------------
+As seen by DEPARTURES:
+Histogram: Occupancy seen by Departures
+  Bin               #    %Total  %Cumulative
+--------------------------------------------
+Total number counted: 0
+================================================
+
+----------------------------------------------------------
+Histogram of "Occupancy seen by Departures" for list: Input 1 mcast buffer, pri=0
+----------------------------------------------------------
+As seen by DEPARTURES:
+Histogram: Occupancy seen by Departures
+  Bin               #    %Total  %Cumulative
+--------------------------------------------
+Total number counted: 0
+================================================
+
+----------------------------------------------------------
+Histogram of "Occupancy seen by Departures" for list: Input 2 mcast buffer, pri=0
+----------------------------------------------------------
+As seen by DEPARTURES:
+Histogram: Occupancy seen by Departures
+  Bin               #    %Total  %Cumulative
+--------------------------------------------
+Total number counted: 0
+================================================
+
+----------------------------------------------------------
+Histogram of "Occupancy seen by Departures" for list: Input 3 mcast buffer, pri=0
+----------------------------------------------------------
+As seen by DEPARTURES:
+Histogram: Occupancy seen by Departures
+  Bin               #    %Total  %Cumulative
+--------------------------------------------
+Total number counted: 0
+================================================
+
+----------------------------------------------------------
+Histogram of "Occupancy seen by Departures" for list: Input 4 mcast buffer, pri=0
+----------------------------------------------------------
+As seen by DEPARTURES:
+Histogram: Occupancy seen by Departures
+  Bin               #    %Total  %Cumulative
+--------------------------------------------
+Total number counted: 0
+================================================
+
+----------------------------------------------------------
+Histogram of "Occupancy seen by Departures" for list: Input 5 mcast buffer, pri=0
+----------------------------------------------------------
+As seen by DEPARTURES:
+Histogram: Occupancy seen by Departures
+  Bin               #    %Total  %Cumulative
+--------------------------------------------
+Total number counted: 0
+================================================
+
+----------------------------------------------------------
+Histogram of "Occupancy seen by Departures" for list: Input 6 mcast buffer, pri=0
+----------------------------------------------------------
+As seen by DEPARTURES:
+Histogram: Occupancy seen by Departures
+  Bin               #    %Total  %Cumulative
+--------------------------------------------
+Total number counted: 0
+================================================
+
+----------------------------------------------------------
+Histogram of "Occupancy seen by Departures" for list: Input 7 mcast buffer, pri=0
+----------------------------------------------------------
+As seen by DEPARTURES:
+Histogram: Occupancy seen by Departures
+  Bin               #    %Total  %Cumulative
+--------------------------------------------
+Total number counted: 0
+================================================
+
+  INPUT BUFFER LATENCY HISTOGRAMS
+  --------------------------
+    No Histograms Enabled. 
+
+  INPUT BUFFER TIME AVG OCCUPANCY HISTOGRAMS
+  -------------------------------------
+    No Histograms Enabled. 
+
+  OUTPUT BUFFER ARRIVAL STATS
+  ---------------------------
+  O/P   Avg   SD
+  --------------
+    No Stats Enabled. 
+
+  OUTPUT BUFFER DEPARTURE STATS
+  -----------------------------
+  O/P   Avg   SD
+  --------------
+    No Stats Enabled. 
+
+  OUTPUT BUFFER LATENCY STATS
+  ---------------------------
+  O/P   Avg   SD
+  --------------
+    No Stats Enabled. 
+
+  OUTPUT BUFFER TIME AVG OCCUPANCY STATS
+  --------------------------------------
+  O/P   Avg   SD
+  --------------
+    No Stats Enabled. 
+
+Avg Number Synchronized Output Schedulers:      3.11 1.3423487    (500)
+Avg Number of Iterations:     1.862 0.34489999    (500)
+Average Grant Latency    4.1697
+Average Accept Latency   0.0000
+
+  Latency statistics
+  ------------------
+                       Avg       SD     Number
+                     -------------------------
+     Input Latency:  91.566975 82.529564    (3464)
+    Fabric Latency:         0        0    (3464)
+    Output Latency:         0        0    (3464)
+    Switch Latency:  91.566975 82.529564    (3464)
+
+
+
+  Crossbar statistics
+  -------------------
+                       Avg       SD     Number
+                     -------------------------
+Match Size:             6.928 0.62515278    (500)
+
+  OUTPUT BURSTINESS
+  -----------------
+   O/P  Avg   SD   
+  -----------------
+    0    1.060   0.280
+    1    1.041   0.210
+    2    1.092   0.352
+    3    1.066   0.321
+    4    1.006   0.080
+    5    1.013   0.131
+    6    1.024   0.152
+    7    1.032   0.177
+-----------------------------
+Total Latency over all cells:  91.566975 82.529564    (3464)
+-----------------------------

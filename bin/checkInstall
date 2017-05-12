@@ -1,0 +1,56 @@
+#!/bin/csh
+
+#
+# Run each test configuration file from the
+# input directory: TEST_INPS and compare with 
+# the output files in directory: TEST_OUTPS
+#
+
+cd ../inputs/TEST_INPS
+
+echo --------------------------------------------------------------------
+echo Will perform regression test on each of the following config files:
+foreach file (*x*)
+        echo $file
+end
+echo --------------------------------------------------------------------
+echo --------------------------------------------------------------------
+
+set testNumber=0
+set numTestsFailed=0
+
+
+/bin/rm -rf ./tmp
+mkdir ./tmp
+mkdir ./tmp/scratchcheckinstallresults/
+mkdir ./tmp/newcheckinstallresults/
+mkdir ./tmp/oldcheckinstallresults/
+
+foreach file (*x*)
+       # Extract cmd line from 1st line of config file
+       @ testNumber++
+       echo -n "  Test $testNumber : $file ...."
+       set CMD = `head -1 $file | sed 's/#//g'`
+			 echo $CMD
+       ../../bin/$CMD -f $file > ./tmp/scratchcheckinstallresults/$file
+	   cat ./tmp/scratchcheckinstallresults/$file | tail +7 | grep -v "#" > ./tmp/newcheckinstallresults/$file
+	   cat ../../outputs/TEST_OUTPS/$file | tail +7 | grep -v "#" > ./tmp/oldcheckinstallresults/$file
+       diff ./tmp/newcheckinstallresults/$file ./tmp/oldcheckinstallresults/$file > /dev/null
+       if ( $status != 0 ) then
+        echo FAILED
+        echo -------------------------------------------------------------
+        @ numTestsFailed++
+       else
+        echo OK.
+       endif
+end
+/bin/rm -rf ./tmp
+
+
+echo "############################"
+echo $testNumber tests completed.
+echo $numTestsFailed failed.
+echo "############################"
+
+exit
+

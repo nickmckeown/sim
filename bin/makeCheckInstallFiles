@@ -1,0 +1,23 @@
+#!/bin/csh
+
+# Make TEST_OUTPS files for checkInstall to compare against. 
+
+cd ../inputs/TEST_INPS
+echo --------------------------------------------------------------------
+echo Will create regression test outputs for each of the following config files:
+foreach file (*x*)
+        echo $file
+end
+echo --------------------------------------------------------------------
+
+set testNumber=0
+rm -f ../../outputs/TEST_OUTPS/*.*
+
+foreach file (*x*)
+       # Extract cmd line from 1st line of config file
+       @ testNumber++
+       echo Test $testNumber : $file
+       set CMD = `head -1 $file | sed 's/#//g'`
+			 echo $CMD
+       ../../bin/$CMD -f $file > ../../outputs/TEST_OUTPS/$file
+end

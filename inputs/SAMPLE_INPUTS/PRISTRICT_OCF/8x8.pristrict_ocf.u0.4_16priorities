@@ -1,0 +1,31 @@
+# ../sim -l1000
+Numswitches 1
+Switch 0
+	Numinputs    8
+	Numoutputs   8
+	PriorityLevels	16
+	InputAction  defaultInputAction  
+	OutputAction strictPriorityOutputAction
+	Fabric       crossbar
+	Algorithm	 pristrict_ocf
+	0	bernoulli_iid_uniform  -p 16 -u 0.4 -r 1:1:1:1:1:1:1:1:1:1:1:1:1:1:1:1
+	1	bernoulli_iid_uniform  -p 16 -u 0.4 -r 1:1:1:1:1:1:1:1:1:1:1:1:1:1:1:1
+	2	bernoulli_iid_uniform  -p 16 -u 0.4 -r 1:1:1:1:1:1:1:1:1:1:1:1:1:1:1:1
+	3	bernoulli_iid_uniform  -p 16 -u 0.4 -r 1:1:1:1:1:1:1:1:1:1:1:1:1:1:1:1
+	4	bernoulli_iid_uniform  -p 16 -u 0.4 -r 1:1:1:1:1:1:1:1:1:1:1:1:1:1:1:1
+	5	bernoulli_iid_uniform  -p 16 -u 0.4 -r 1:1:1:1:1:1:1:1:1:1:1:1:1:1:1:1
+	6	bernoulli_iid_uniform  -p 16 -u 0.4 -r 1:1:1:1:1:1:1:1:1:1:1:1:1:1:1:1
+	7	bernoulli_iid_uniform  -p 16 -u 0.4 -r 1:1:1:1:1:1:1:1:1:1:1:1:1:1:1:1
+	Stats
+		Arrivals    (0,0)
+		Departures
+		Latency     (*,1)
+		Occupancy   (1,*)
+	Histograms
+		Arrivals 
+		Departures  (*,m)
+		Latency 
+		Occupancy   
+
+
+

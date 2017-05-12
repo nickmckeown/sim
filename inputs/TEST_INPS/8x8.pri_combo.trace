@@ -1,0 +1,28 @@
+# sim -l1000
+Numswitches 1
+Switch 0
+	Numinputs    8
+	Numoutputs   8
+    PriorityLevels 4
+	InputAction  defaultInputAction  
+	OutputAction strictPriorityOutputAction
+	Fabric       crossbar
+	Algorithm	pri_combo
+	0	trace   -p -f traceInput
+	1	trace   -p -f traceInput
+	2	trace   -p -f traceInput
+	3	trace   -p -f traceInput
+	4	trace   -p -f traceInput
+	5	trace   -p -f traceInput
+	6	trace   -p -f traceInput
+	7	trace   -p -f traceInput
+	Stats
+		Arrivals    (0,0)
+		Departures
+		Latency     (*,1)
+		Occupancy   (1,*)
+	Histograms
+		Arrivals 
+		Departures  
+		Latency 
+		Occupancy   

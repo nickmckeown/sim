@@ -1,0 +1,185 @@
+The following changes have been made to SIMv2.35
+-----------------------------------------------
+
+The checkinstall script has been modified so that the scratch is now
+./tmp
+
+========= CHANGES TO OLDER VERSIONS ===============
+The following changes have been made to  SIMv2.33
+
+
+1) Another bug fix was done to list.c
+
+2) Sim now prints the version number in the output files.
+
+3) The checkinstall script has been slightly modified.
+
+Known Bugs:
+==========
+
+1) The bursty.c and bursty_nonuniform.c codes are undergoing testing 
+    presently.
+
+
+The following changes have been made to  SIMv2.31
+
+1) The bug in the time average occupancy statistics has been removed. This 
+change affects the following two files i.e. lists.c and config.c
+
+
+The following changes have been made to  SIMv2.30
+================================================
+
+1) The SIM Configuration code broken out into config.c
+
+2) The command line arguments for stand-alone (no config file) traffic parameters
+   have been removed. 
+
+   NOTE : The above is a significant change and users will now HAVE to specify the
+		  same from a file only.
+
+3) The various function tables for traffic, algorithm, fabric, inputAction
+and outputAction have been rewritten to use a common structure
+definition in functionTable.h.  functiontable.c contains common code for
+finding the various functions. 
+
+4) The INPUTACTION_CELL_CREDIT_ARRIVAL_CHECK call was renamed to 
+INPUTACTION_PERCELL_CHECK for clarity.
+
+5) LiteLists which cut the memory utilization way down been added.
+ 
+6) An additional flag -R to all of the random traffic sources that
+ allows you to specify the utilization of multicast cells to different priorities
+ seperately from the utilization of uncast cells (as specified in -r) has been
+ added. It still respects -m for deciding how much traffic to make 
+ multicast and unicast, and then uses the -R values or the -r values to 
+ pick a priority.  
+ 
+7) A null traffic source has been added.
+
+8) A modified trace traffic source to have priorities, multicast, and
+ support input from pipes and compressed files has been added.
+ 
+9) bursty.c has been modified in a minor way to remove some unimportant (and
+ potentially confusing) intermediate values as it was parsing its -r string.
+
+10) Bug Fix in slip_prime.
+
+11) slip_prime renamed to islip and pri_slip_prime renamed to pri_islip.
+    Changes made to SAMPLE_INPUTS/ISLIP and SAMPLE_INPUTS/PRI_ISLIP
+ 
+12) Added priority check for default outputaction which cannot handle multiple priorities.
+
+13) Chaned the = 0 bug, in islip and pri_islip. Changed the respective TEST_OUTPUTS for  
+     tests involving islip and pri_islip. (previously known as slip_prime and pri_slip_prime)
+
+14) Added new algorithms, pristrict_lqf, pristrict_ocf, pri_lqf and pri_ocf.
+
+15) Removed support for "|" in trace files. 
+
+
+
+The following changes have been made to  SIMv2.16 
+================================================
+
+1) Support for the following algorithms have been added.
+
+mcast_tatra.c 
+mcast_wt_fanout.c  
+mcast_wt_residue.c 
+future.c  
+maximum.c
+maxrand.c 
+neural.c 
+
+
+2) A new version of checkInstall has been added.
+
+
+
+The following changes have been made to  SIMv2.15 
+================================================
+
+Support for the following algorithms have been added.
+==================================================
+
+lpf_delay.c  
+ocf.c       
+wfa.c      
+wwfa.c    
+rr.c     
+mcast_slip.c 
+opf_delay.c 
+
+Changes made to previous releases.
+=================================
+
+The following changes have been made to  SIMv2.14 
+================================================
+
+Support for the following scheduling algorithms have been
+added:
+
+1) gs_lqf.c
+2) gs_ocf.c
+3) lqf.c
+4) ilpf.c
+5) ilqf.c
+6) iocf.c
+7) iopf.c
+
+The following changes have been made to  SIMv2.11
+================================================
+
+Support for the following scheduling algorithms have been
+added:
+
+1) mcast_conc_residue.c
+2) mcast_dist_residue.c
+3) lpf.c
+4) opf.c
+
+The following changes have been made to  SIMv2.10
+================================================
+
+1) Support for simgraph has been added. sim can now interface with a Java
+   tool to report statistics and graph them during execution time.
+
+2) Added createsim, a shell script through which sim is compiled.
+
+3) Files added:  aux.c,aux.h,graph.c,graph.h and createsim
+
+
+The following changes have been made to  SIMv2.01
+================================================
+
+1) Priorities are being supported. A new option -p for the levels of priority
+   to be supported and -r for the ratios amongst them are supported.
+
+2) Whenever a multicast option is specified but no values are given to it
+	 then the multicast fraction defaults to 0.5
+
+3) A smaller and cleaner set of algorithms are supported. So is the case
+	 for FABRICS, OUTPUTACTIONS and INPUTACTIONS.
+
+4) SAMPLE_INPUTS has sample input files.
+	 TEST_INPS and TEST_OUTPS contain test files. The outputs are available in
+	 TEST_OUTPS. checkInstall is a script to create and compare the sim outputs.
+
+SIM Time Card.
+==============
+
+Changed bernoulli_uniform.c -v2.0 - Feb 99.
+Changed bernoulli_nonuniform.c -v2.0 - Feb 99.
+Changed bursty.c -v2.0 - March 99.
+Bug Fixes done - v2.0 - 9 March.
+Bug fix for parse error from old version i.e. v1.5 -v2.0 - 10 th March
+Changed  BITMAP_BYTES from 20 to 128. - 14 March.
+SIM Mailing List Started - Sunday, 14 March.
+Added Disclaimer - March 14 th.
+Added additional checks for the priority.
+Changed lists.c as suggested by Pankaj. - Sunday 28 th March
+Changed switchStats.c -
+Added free's() to the code - March 29 th.
+Added changed output messages for stderr/stdout.
+Released version 2.01 - March 30 th 1999
