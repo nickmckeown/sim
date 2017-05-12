@@ -1,0 +1,3 @@
+- Autogenerate Version Number info from git, rather than manual.
+- Integrate with a graphing front end more closely; or add graphing scripts.
+- Tie in with "distribute" or other tools for distributing jobs over multiple servers.
