@@ -653,7 +653,7 @@ char **argv;
     printf("%s ", argv[i]); 
   time(&aTime);
   printf("\nThis is Sim version 2.36, Released May 11, 2017 \n"); 
-  printf("\n# Date %s", ctime(&aTime)); 
+  printf("\n# Date %d", ctime(&aTime)); 
 
   gethostname(hostname, MAXSTRING);
   printf("# Machine %s\n", hostname);
