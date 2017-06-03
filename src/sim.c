@@ -30,7 +30,7 @@
  */
 
 #include <unistd.h>
-#include <sys/time.h>
+#include <time.h>
 #include <math.h>
 #include "sim.h"
 
@@ -653,7 +653,7 @@ char **argv;
     printf("%s ", argv[i]); 
   time(&aTime);
   printf("\nThis is Sim version 2.36, Released May 11, 2017 \n"); 
-  printf("\n# Date %d", ctime(&aTime)); 
+  printf("\n# Date %s", ctime(&aTime)); 
 
   gethostname(hostname, MAXSTRING);
   printf("# Machine %s\n", hostname);
