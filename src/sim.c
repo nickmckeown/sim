@@ -30,7 +30,7 @@
  */
 
 #include <unistd.h>
-#include <sys/time.h>
+#include <time.h>
 #include <math.h>
 #include "sim.h"
 
